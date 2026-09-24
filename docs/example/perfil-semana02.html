@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil — Buscador de Grupos de Estudo</title>
+  <link rel="stylesheet" href="styles-semana02.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="dashboard-semana02.html" class="navbar__logo">Buscador de Grupos</a>
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="dashboard-semana02.html">Grupos</a></li>
+        <li><a href="perfil-semana02.html" aria-current="page">Perfil</a></li>
+        <li><a href="perfil-semana02.html" class="avatar" aria-label="Ir para o perfil">AM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="perfil-topo">
+      <div class="avatar avatar--lg" aria-hidden="true">AM</div>
+      <div class="perfil-info">
+        <h2>Ana Martins</h2>
+        <p>ana.martins@exemplo.com</p>
+        <div class="tags">
+          <span class="tag">Cálculo I</span>
+          <span class="tag">Estrutura de Dados</span>
+          <span class="tag">Banco de Dados</span>
+        </div>
+        <div class="perfil-acoes">
+          <button class="botao botao-primario" type="button">Editar perfil</button>
+          <button class="botao botao-secundario" type="button">Sair</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagina-header">
+      <h1>Meus grupos</h1>
+      <p>Você está em 3 grupos de estudo.</p>
+    </div>
+
+    <section class="dashboard-grid" aria-label="Grupos dos quais você participa">
+      <article class="card">
+        <h3>Cálculo I</h3>
+        <p>5 participantes · encontros às terças</p>
+        <button class="botao botao-secundario" type="button">Sair do grupo</button>
+      </article>
+      <article class="card">
+        <h3>Estrutura de Dados</h3>
+        <p>3 participantes · encontros às quintas</p>
+        <button class="botao botao-secundario" type="button">Sair do grupo</button>
+      </article>
+      <article class="card">
+        <h3>Banco de Dados</h3>
+        <p>8 participantes · encontros aos sábados</p>
+        <button class="botao botao-secundario" type="button">Sair do grupo</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

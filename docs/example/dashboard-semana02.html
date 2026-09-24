@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Buscador de Grupos de Estudo</title>
+  <link rel="stylesheet" href="styles-semana02.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="dashboard-semana02.html" class="navbar__logo">Buscador de Grupos</a>
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="dashboard-semana02.html" aria-current="page">Grupos</a></li>
+        <li><a href="perfil-semana02.html">Perfil</a></li>
+        <li><a href="perfil-semana02.html" class="avatar" aria-label="Ir para o perfil">AM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pagina-header">
+      <h1>Seus grupos de estudo</h1>
+      <p>Encontre colegas estudando a mesma matéria que você.</p>
+    </div>
+
+    <label for="busca" class="sr-only">Buscar por matéria</label>
+    <input type="search" id="busca" class="busca" placeholder="Buscar por matéria...">
+
+    <section class="dashboard-grid" aria-label="Grupos disponíveis">
+      <article class="card">
+        <h3>Cálculo I</h3>
+        <p>5 participantes · encontros às terças</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+      <article class="card">
+        <h3>Estrutura de Dados</h3>
+        <p>3 participantes · encontros às quintas</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+      <article class="card">
+        <h3>Banco de Dados</h3>
+        <p>8 participantes · encontros aos sábados</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+      <article class="card">
+        <h3>Engenharia de Software</h3>
+        <p>4 participantes · encontros às segundas</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+      <article class="card">
+        <h3>Redes de Computadores</h3>
+        <p>6 participantes · encontros às quartas</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+      <article class="card">
+        <h3>Sistemas Operacionais</h3>
+        <p>2 participantes · encontros às sextas</p>
+        <button class="botao botao-primario" type="button">Participar</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

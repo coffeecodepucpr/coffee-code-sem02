@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Learnplat</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="dashboard.html" class="navbar__logo">Learning Platform</a>
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html" aria-current="page">Profile</a></li>
+        <li><a href="login.html">Exit</a></li>
+        <li><a href="profile.html" class="avatar" aria-label="Go to profile">JS</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="profile-top">
+      <div class="avatar avatar--lg" aria-hidden="true">JS</div>
+      <div class="profile-info">
+        <h2>John Smith</h2>
+        <p>john.smith@supermail.com</p>
+        <div class="profile-stock">
+          <button class="button button-primary" type="button">Edit profile</button>
+          <button class="button botton-secondary" type="button">Exit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1>My courses</h1>
+      <p>List of courses.</p>
+    </div>
+
+    <section class="dashboard-grid" aria-label="Courses you participate in">
+      <article class="card">
+        <h3>Mathematics</h3>
+        <p>mathematics course</p>
+        <button class="button" type="button">Stop learning</button>
+      </article>
+
+      <article class="card">
+        <h3>Physics</h3>
+        <p>physics course</p>
+        <button class="button" type="button">Stop learning</button>
+      </article>
+
+      <article class="card">
+        <h3>Programming</h3>
+        <p>programming course</p>
+        <button class="button" type="button">Stop learning</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

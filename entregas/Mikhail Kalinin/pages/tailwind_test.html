@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Dashboard — Learnplat</title>
+</head>
+<body class="m-2">
+  <header class="flex justify-between items-center px-6 py-4 bg-white border-b border-[#D1D9E0]">
+    <a href="dashboard.html" class="font-bold text-[1.1rem] no-underline text-[#1D3557]">Learning Platform</a>
+    <nav>
+      <ul class="flex items-center gap-6 list-none m-0 p-0">
+        <li><a href="dashboard.html" aria-current="page" class="no-underline text-[#6C7A89] font-semibold aria-[current=page]:text-[#1D3557]">Dashboard</a></li>
+        <li><a href="profile.html" class="no-underline text-[#6C7A89] font-semibold aria-[current=page]:text-[#1D3557]">Profile</a></li>
+        <li><a href="login.html" class="no-underline text-[#6C7A89] font-semibold aria-[current=page]:text-[#1D3557]">Exit</a></li>
+        <li><a href="profile.html" class="w-10 h-10 rounded-full bg-[#2A9D8F] text-white flex items-center justify-center font-bold text-[0.9rem] no-underline" aria-label="Go to profile">JS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="page-header">
+    <h1>Subjects of study</h1>
+    <p>Choose a subject to study.</p>
+  </div>
+
+  <label for="search" class="search-label">Search</label>
+  <input type="search" id="search" class="search" placeholder="Search...">
+
+  <section class="dashboard-grid">
+    <article class="card">
+      <h3>Mathematics</h3>
+      <p>mathematics course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+    <article class="card">
+      <h3>Physics</h3>
+      <p>physics course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+    <article class="card">
+      <h3>Programming</h3>
+      <p>programming course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+    <article class="card">
+      <h3>History</h3>
+      <p>history course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+    <article class="card">
+      <h3>Literature</h3>
+      <p>literature course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+    <article class="card">
+      <h3>Сhemistry</h3>
+      <p>chemistry course</p>
+      <button class="button" type="button">Take</button>
+    </article>
+
+  </section>
+  </main>
+</body>
+</html>

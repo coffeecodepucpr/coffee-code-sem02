@@ -46,7 +46,7 @@ E, para consultar quando precisar:
 
 A pasta [`docs/example/`](docs/example/) tem uma implementação de referência das três telas, em HTML e CSS puro. Baixe o repositório e abra o `index-semana02.html` no navegador para navegar entre elas.
 
-É material de **consulta, não gabarito**. O projeto da sua equipe tem as suas próprias telas, decididas na Semana 01 — o exemplo serve para você ver uma solução possível quando travar, não para copiar.
+É material de **consulta, não gabarito**. O seu projeto tem as suas próprias telas, decididas na Semana 01 — o exemplo serve para você ver uma solução possível quando travar, não para copiar.
 
 ## O entregável
 
@@ -72,15 +72,15 @@ Para evitar ansiedade desnecessária: nada de backend, banco de dados ou autenti
 
 ## Projeto contínuo
 
-Todos os módulos usam o mesmo projeto fictício da Semana 01: o **Buscador de Grupos de Estudo**, uma plataforma para estudantes encontrarem colegas estudando a mesma matéria. Se sua equipe tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma — só troque o nome.
+Todos os módulos usam o mesmo projeto fictício da Semana 01: o **Buscador de Grupos de Estudo**, uma plataforma para estudantes encontrarem colegas estudando a mesma matéria. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma — só troque o nome.
 
 ## Como funciona
 
-O Coffee & Code é **majoritariamente assíncrono**. Cada módulo foi escrito para ser autossuficiente: você estuda sozinho, no seu ritmo, sem depender de estar em uma call. Dá para avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
+O Coffee & Code é **100% online**. Cada módulo foi escrito para ser autossuficiente: você estuda no seu ritmo, pode avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
 
-Os encontros semanais existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
+Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
 
-- 🗓️ **quarta-feira** — 19h30 às 21h00
+- 🗓️ **quarta-feira** — 20h00 às 21h30
 - 🗓️ **sábado** — 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.

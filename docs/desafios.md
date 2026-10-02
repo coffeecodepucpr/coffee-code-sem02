@@ -89,4 +89,4 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ## // Desafio geral (todos)
 
-Peça para alguém de fora do seu grupo (ou você mesmo, revisando depois de um intervalo) navegar pelas suas três telas usando só o teclado, em pelo menos duas larguras de tela diferentes, sem nenhuma explicação sua. Essa pessoa consegue: entender o que cada tela faz? Preencher o formulário de Login? Navegar entre as telas? Se a resposta for sim para tudo, seu entregável está em um bom nível. Se não, volte ao módulo correspondente.
+Peça para outra pessoa (ou você mesmo, revisando depois de um intervalo) navegar pelas suas três telas usando só o teclado, em pelo menos duas larguras de tela diferentes, sem nenhuma explicação sua. Essa pessoa consegue: entender o que cada tela faz? Preencher o formulário de Login? Navegar entre as telas? Se a resposta for sim para tudo, seu entregável está em um bom nível. Se não, volte ao módulo correspondente.

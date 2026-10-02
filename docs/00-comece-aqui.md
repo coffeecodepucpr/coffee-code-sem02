@@ -61,7 +61,7 @@ Três coisas, especificamente:
 
 1. **O protótipo do Figma** — cada tela que você construir esta semana parte de uma tela que já existe lá. Você não está inventando layout novo, está traduzindo um layout já decidido.
 2. **O design system** (`/docs/design-system.md`) — cores, tipografia e espaçamento que você definiu não são escolhidos de novo; eles viram valores reais no CSS.
-3. **O projeto contínuo** — se você seguiu a Semana 01 com o Buscador de Grupos de Estudo (plataforma para estudantes encontrarem grupos de estudo), é esse mesmo projeto que ganha interface agora. Se sua equipe já tinha um projeto próprio, o raciocínio é idêntico — só troque o nome.
+3. **O projeto contínuo** — se você seguiu a Semana 01 com o Buscador de Grupos de Estudo (plataforma para estudantes encontrarem grupos de estudo), é esse mesmo projeto que ganha interface agora. Se você já tinha um projeto próprio, o raciocínio é idêntico — só troque o nome.
 
 ## // Da Semana 01 à Semana 02, num mapa só
 

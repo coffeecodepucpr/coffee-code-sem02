@@ -72,7 +72,7 @@ Para deixar claro e evitar ansiedade desnecessária:
 ## // Como revisar antes de entregar
 
 > **O TESTE MAIS IMPORTANTE DESTA SEMANA**
-> Peça para outra pessoa — um colega de equipe, alguém de outro grupo do Coffee & Code, ou você mesmo revisando depois de um tempo — abrir suas três páginas, sem nenhuma explicação sua, e: preencher o formulário de Login, navegar até o Dashboard, ver o Perfil, tudo isso redimensionando a janela para simular um celular em algum momento. Essa pessoa consegue fazer tudo isso sem travar ou ficar confusa?
+> Peça para outra pessoa — um colega do Coffee & Code, um amigo, ou você mesmo revisando depois de um tempo — abrir suas três páginas, sem nenhuma explicação sua, e: preencher o formulário de Login, navegar até o Dashboard, ver o Perfil, tudo isso redimensionando a janela para simular um celular em algum momento. Essa pessoa consegue fazer tudo isso sem travar ou ficar confusa?
 
 Se a resposta for sim, sua entrega está no caminho certo. Se não, volte ao módulo correspondente e ajuste — isso não é falha, é exatamente o tipo de ajuste que esta revisão final existe para capturar antes do prazo.
 

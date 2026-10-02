@@ -201,7 +201,7 @@ Modelo sugerido para adicionar em `/docs/design-system.md`:
 ## // Checkpoint
 
 > **ANTES DE SEGUIR, PENSE NISTO**
-> Sua equipe decide mudar a cor primária do projeto inteiro. Com CSS Custom Properties bem aplicadas, quantos lugares no código precisam ser editados?
+> Você decide mudar a cor primária do projeto inteiro. Com CSS Custom Properties bem aplicadas, quantos lugares no código precisam ser editados?
 
 Resposta: um só — a definição da variável dentro de `:root`. Todo componente que usa `var(--color-primary)` reflete a mudança automaticamente, sem precisar editar cada regra individualmente.
 

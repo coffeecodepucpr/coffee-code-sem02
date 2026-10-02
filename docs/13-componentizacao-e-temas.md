@@ -184,7 +184,7 @@ Essa media query detecta a preferência de tema já configurada no sistema opera
 ## // Checkpoint
 
 > **ANTES DE SEGUIR, PENSE NISTO**
-> Sua equipe quer adicionar um botão que alterna entre tema claro e escuro ao ser clicado. O CSS que você já escreveu neste módulo já é suficiente para isso funcionar, ou falta alguma coisa?
+> Você quer adicionar um botão que alterna entre tema claro e escuro ao ser clicado. O CSS que você já escreveu neste módulo já é suficiente para isso funcionar, ou falta alguma coisa?
 
 Resposta: falta JavaScript. O CSS já prepara toda a base (as variáveis mudando conforme `data-theme`), mas alternar esse atributo em resposta a um clique é uma ação dinâmica — comportamento, não estrutura nem apresentação — que só JavaScript resolve. É exatamente por isso que esse botão está marcado como desafio de aprofundamento, não como parte do entregável básico.
 

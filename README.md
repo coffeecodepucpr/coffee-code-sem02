@@ -7,7 +7,7 @@
 > coffee loaded ✓
 ```
 
-Material da **Semana 02** da trilha do Coffee & Code, o clube de tecnologia da PUCPR.
+Material da **Semana 02** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
 Na Semana 01 você planejou. Nesta semana você constrói. Aquele protótipo do Figma é uma representação da interface — não é a interface. Um arquivo do Figma não roda no navegador de ninguém.
 
@@ -72,7 +72,7 @@ Projetos de quem entregou a Semana 02. Quer entregar o seu? Veja [como entregar]
 
 | Pessoa | Projeto | Sobre | Links |
 |---|---|---|---|
-| [@gorfofnf](https://github.com/gorfofnf) | — | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
+| Pedro Henrique Gouveia | — | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
 | Guilherme Barbosa | Shelf Hub | Biblioteca pessoal de filmes, séries, livros, jogos e outros conteúdos | [pasta](entregas/Guilherme%20Barbosa/) · [Figma](https://www.figma.com/proto/qzzGhfapnxVoYsicLXboxt/Shelf-Hub?node-id=5-788&p=f&t=A6Dyj4L6kNFV6My3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A7) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Guilherme%20Barbosa/login.html) |
 | Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Luis%20Medina/index.html) |
 | Mikhail Kalinin | Online Learning Platform | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Mikhail%20Kalinin/pages/login.html) |
@@ -110,6 +110,8 @@ Todos os diagramas usados nos módulos estão em [`docs/assets/`](docs/assets/),
 ## Semanas anteriores
 
 - [SEM 01 — Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
+
+Trilha completa e próximas semanas: [perfil do Coffee & Code](https://github.com/coffeecodepucpr)
 
 ---
 

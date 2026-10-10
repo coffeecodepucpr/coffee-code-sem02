@@ -1,5 +1,7 @@
 # Módulo 02 | HTML: Estrutura da Página
 
+Português · [English](../docs-eng/02-html.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -27,7 +29,7 @@ Entrar
 Isso é texto. Um navegador até consegue mostrar texto puro na tela, mas ele não faz ideia de que a primeira linha é um título, que "Email" e "Senha" são rótulos de campos que a pessoa deveria preencher, ou que o último "Entrar" é um botão clicável. Para o navegador, são só cinco linhas de texto, sem hierarquia, sem função, sem significado.
 
 > **O PONTO PRINCIPAL**
-> Sem uma forma de marcar o que cada parte do texto *é*, não existe diferença entre um título, um parágrafo e um botão, só letras na tela. É esse problema que o HTML resolve.
+> Sem uma forma de marcar o que cada parte do texto *é*, não existe diferença entre um título, um parágrafo e um botão: só letras na tela. É esse problema que o HTML resolve.
 
 ## // O que é HTML?
 
@@ -54,11 +56,11 @@ Voltando ao exemplo de antes, veja o que acontece quando cada linha ganha uma ma
 <button>Entrar</button>
 ```
 
-Nada do *conteúdo* mudou, ainda são as mesmas palavras. O que mudou é que agora cada pedaço carrega um significado explícito: `<h1>` diz "isto é o título mais importante da página", `<label>` diz "isto é o rótulo de um campo", `<input>` diz "isto é um campo onde a pessoa digita algo", `<button>` diz "isto é algo clicável que dispara uma ação". O navegador lê essas marcações e já sabe, sem adivinhar, como tratar cada parte.
+Nada do *conteúdo* mudou: ainda são as mesmas palavras. O que mudou é que agora cada pedaço carrega um significado explícito: `<h1>` diz "isto é o título mais importante da página", `<label>` diz "isto é o rótulo de um campo", `<input>` diz "isto é um campo onde a pessoa digita algo", `<button>` diz "isto é algo clicável que dispara uma ação". O navegador lê essas marcações e já sabe, sem adivinhar, como tratar cada parte.
 
 ## // Tag, elemento, conteúdo, atributo
 
-Quatro termos que vão aparecer o tempo todo, melhor fixar agora, com um exemplo concreto:
+Quatro termos que vão aparecer o tempo todo; melhor fixar agora, com um exemplo concreto:
 
 ```html
 <label for="email">Email</label>
@@ -89,7 +91,7 @@ Três termos derivam diretamente dessa ideia de aninhamento:
 - **Elemento filho**: um elemento que está dentro de outro. `<h1>` é filho de `<body>`.
 - **Elemento irmão (sibling)**: elementos que compartilham o mesmo pai. `<h1>`, `<label>`, `<input>` e `<button>` são todos irmãos entre si, porque todos são filhos diretos de `<body>`.
 
-Essa relação de pai/filho/irmão não é só um detalhe de vocabulário, no Módulo 06 (Flexbox) e Módulo 07 (Grid), praticamente toda propriedade CSS de layout que você vai aprender atua exatamente nessa relação: um container (pai) organizando seus itens (filhos).
+Essa relação de pai/filho/irmão não é só um detalhe de vocabulário: no Módulo 06 (Flexbox) e Módulo 07 (Grid), praticamente toda propriedade CSS de layout que você vai aprender atua exatamente nessa relação: um container (pai) organizando seus itens (filhos).
 
 ## // Indentação: por que a forma como você escreve importa
 
@@ -143,7 +145,7 @@ Nada disso é decoração; cada linha existe por um motivo:
 | `<title>` | Define o texto que aparece na aba do navegador |
 | `<body>` | Contém tudo o que realmente aparece na página para quem está vendo |
 
-Note que `<head>` e `<body>` são irmãos, os dois filhos diretos de `<html>`, e que **tudo o que uma pessoa vê** vive dentro de `<body>`. É lá que o restante deste módulo acontece.
+Note que `<head>` e `<body>` são irmãos (os dois são filhos diretos de `<html>`) e que **tudo o que uma pessoa vê** vive dentro de `<body>`. É lá que o restante deste módulo acontece.
 
 ## // Elementos essenciais, um de cada vez
 
@@ -206,7 +208,7 @@ Juntando o que vimos até aqui, dentro do `<body>` do arquivo de Login:
 </body>
 ```
 
-Isso já é uma página HTML válida, sem nenhum CSS, sem nenhum estilo, o navegador já sabe exibir um título grande seguido de um parágrafo. É pouco visualmente, mas é estruturalmente correto, e é exatamente esse tipo de correção que os próximos módulos (Formulários, depois CSS) constroem em cima.
+Isso já é uma página HTML válida, sem nenhum CSS, sem nenhum estilo: o navegador já sabe exibir um título grande seguido de um parágrafo. É pouco visualmente, mas é estruturalmente correto, e é exatamente esse tipo de correção que os próximos módulos (Formulários, depois CSS) constroem em cima.
 
 ## // Bom exemplo × mau exemplo
 
@@ -243,7 +245,7 @@ Vamos aprofundar exatamente esse ponto, `<div>` genérica × elemento com signif
 Vamos montar, juntos, o esqueleto completo da página de Login.
 
 1. Crie um arquivo chamado `login.html`.
-2. Adicione a estrutura mínima (`<!DOCTYPE html>` até `</html>`), com o `<title>` "Login: Buscador de Grupos de Estudo".
+2. Adicione a estrutura mínima (`<!DOCTYPE html>` até `</html>`), com o `<title>` "Login | Buscador de Grupos de Estudo".
 3. Dentro do `<body>`, adicione um `<h1>` com o texto "Entrar".
 4. Logo abaixo, adicione um `<p>` explicando brevemente o que a tela faz.
 5. Adicione um `<a>` com um link para uma futura página de cadastro (o destino pode ser `cadastro.html`, mesmo que esse arquivo ainda não exista).

@@ -1,5 +1,7 @@
 # Coffee & Code | SEM 02 | Interface Web (Parte 1: Layout)
 
+Português · [English](README.en.md)
+
 ```text
 > module: sem-02
 > tema: interface web (layout)
@@ -12,6 +14,8 @@ Material da **Semana 02** da trilha do Coffee & Code, clube de tecnologia fundad
 Na Semana 01 você planejou. Nesta semana você constrói. Aquele protótipo do Figma é uma representação da interface; não é a interface. Um arquivo do Figma não roda no navegador de ninguém.
 
 A Semana 02 existe para fechar essa distância: pegar o que foi decidido e transformar em HTML e CSS reais. No fim da semana você abre as suas três telas no navegador, redimensiona a janela até o tamanho de um celular, e nada quebra.
+
+> **Sobre o idioma:** o material em inglês fica em [`docs-eng/`](docs-eng/), com a mesma estrutura de [`docs/`](docs/); os READMEs têm versão em inglês com o sufixo `.en.md`.
 
 ## Por onde começar
 
@@ -27,7 +31,7 @@ Depois, siga os módulos na ordem:
 | 04 | [CSS](docs/04-css.md) | Seletores, cascade, conectando CSS ao HTML |
 | 05 | [Box Model e unidades](docs/05-box-model-e-unidades.md) | `border-box`, padding, margin, px/rem/%/vh |
 | 06 | [Flexbox](docs/06-flexbox.md) | Eixos, alinhamento, distribuição |
-| 07 | [Grid](docs/07-grid.md) | Linhas, colunas, `fr`: e quando não usar Flexbox |
+| 07 | [Grid](docs/07-grid.md) | Linhas, colunas, `fr`, e quando não usar Flexbox |
 | 08 | [Responsividade](docs/08-responsividade.md) | Viewport, breakpoints, mobile-first |
 | 09 | [Do Figma para o código](docs/09-figma-para-codigo.md) | Decompondo uma tela antes de codificar |
 | 10 | [Tailwind](docs/10-tailwind.md) | Utility-first CSS com Tailwind v4 |
@@ -72,7 +76,7 @@ Projetos de quem entregou a Semana 02. Quer entregar o seu? Veja [como entregar]
 
 | Pessoa | Projeto | Sobre | Links |
 |---|---|---|---|
-| Pedro Henrique Gouveia |: | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
+| Pedro Henrique Gouveia | Sem nome definido | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
 | Guilherme Barbosa | Shelf Hub | Biblioteca pessoal de filmes, séries, livros, jogos e outros conteúdos | [pasta](entregas/Guilherme%20Barbosa/) · [Figma](https://www.figma.com/proto/qzzGhfapnxVoYsicLXboxt/Shelf-Hub?node-id=5-788&p=f&t=A6Dyj4L6kNFV6My3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A7) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Guilherme%20Barbosa/login.html) |
 | Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Luis%20Medina/index.html) |
 | Mikhail Kalinin | Online Learning Platform | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Mikhail%20Kalinin/pages/login.html) |

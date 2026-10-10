@@ -1,12 +1,14 @@
 # Módulo 10 | Tailwind CSS
 
+Português · [English](../docs-eng/10-tailwind.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
 ## // Antes de começar
 
-Este módulo só faz sentido depois dos Módulos 04 a 08. Se `display: flex`, `padding` ou `grid-template-columns` ainda não estão claros como CSS puro, volte lá antes de continuar. Tailwind não ensina CSS, ele abrevia a escrita de CSS que você já entende.
+Este módulo só faz sentido depois dos Módulos 04 a 08. Se `display: flex`, `padding` ou `grid-template-columns` ainda não estão claros como CSS puro, volte lá antes de continuar. Tailwind não ensina CSS; ele abrevia a escrita de CSS que você já entende.
 
 ## // O problema
 
@@ -65,7 +67,7 @@ Traduzindo cada classe:
 | `rounded-xl` | `border-radius: 0.75rem;` |
 
 > **NÃO DEIXE ISSO VIRAR MÁGICA**
-> A classe `flex` não é uma palavra especial que "faz o layout funcionar"; é literalmente `display: flex` escrito de um jeito mais curto. Toda classe Tailwind representa uma ou mais declarações CSS reais. Se você não sabe qual CSS uma classe representa, você não sabe o que ela está fazendo, só está copiando algo que parece funcionar.
+> A classe `flex` não é uma palavra especial que "faz o layout funcionar"; é literalmente `display: flex` escrito de um jeito mais curto. Toda classe Tailwind representa uma ou mais declarações CSS reais. Se você não sabe qual CSS uma classe representa, você não sabe o que ela está fazendo: só está copiando algo que parece funcionar.
 
 ## // Utility classes que você já reconhece
 
@@ -93,7 +95,7 @@ Repare: `justify-between` é `justify-content: space-between`, um conceito que v
 <div class="p-8">...</div>  <!-- 2rem -->
 ```
 
-Os números não são pixels nem uma unidade livre, são posições em uma escala pré-definida, pensada para manter espaçamentos consistentes entre si (o mesmo princípio de consistência do seu design system da Semana 01, só que aplicado através de uma escala já pronta).
+Os números não são pixels nem uma unidade livre; são posições em uma escala pré-definida, pensada para manter espaçamentos consistentes entre si (o mesmo princípio de consistência do seu design system da Semana 01, só que aplicado através de uma escala já pronta).
 
 ## // Responsividade em Tailwind
 
@@ -101,7 +103,7 @@ Os números não são pixels nem uma unidade livre, são posições em uma escal
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 ```
 
-Isso diz: 1 coluna por padrão (mobile-first, igual ao Módulo 08), 2 colunas a partir do breakpoint `md`, 3 a partir do `lg`. Os prefixos `md:` e `lg:` são convenções do próprio Tailwind para representar breakpoints, por padrão, `md` equivale a `768px` e `lg` a `1024px`, os mesmos valores que você já usou manualmente no Módulo 08.
+Isso diz: 1 coluna por padrão (mobile-first, igual ao Módulo 08), 2 colunas a partir do breakpoint `md`, 3 a partir do `lg`. Os prefixos `md:` e `lg:` são convenções do próprio Tailwind para representar breakpoints. Por padrão, `md` equivale a `768px` e `lg` a `1024px`, os mesmos valores que você já usou manualmente no Módulo 08.
 
 ## // Dark mode, quando pertinente
 
@@ -109,12 +111,12 @@ Isso diz: 1 coluna por padrão (mobile-first, igual ao Módulo 08), 2 colunas a 
 <div class="bg-white dark:bg-gray-900 text-black dark:text-white">
 ```
 
-O prefixo `dark:` aplica a regra quando o modo escuro está ativo. Vamos aprofundar tema claro/escuro no Módulo 13, por enquanto, só reconheça o padrão.
+O prefixo `dark:` aplica a regra quando o modo escuro está ativo. Vamos aprofundar tema claro/escuro no Módulo 13; por enquanto, só reconheça o padrão.
 
 ## // Instalando o Tailwind | o que este guia usa, e por quê
 
 > **VERSÃO E DATA DA CONSULTA**
-> Este módulo foi escrito consultando a documentação oficial do Tailwind CSS (tailwindcss.com/docs) em 21 de setembro de 2026. A versão estável atual é o **Tailwind CSS v4** (build 4.3.x). A v4 mudou a forma de instalar em relação a versões antigas: não existe mais `tailwind.config.js` obrigatório, e o antigo `@tailwind base; @tailwind components; @tailwind utilities;` foi substituído por um único `@import "tailwindcss";`. Se você encontrar um tutorial mais antigo usando esses comandos, ele está desatualizado; siga o que está aqui.
+> Este módulo foi escrito consultando a documentação oficial do Tailwind CSS (tailwindcss.com/docs) em 21 de setembro de 2026. A versão estável atual é o **Tailwind CSS v4** (build 4.3.x). A v4 mudou a forma de instalar em relação a versões antigas: não existe mais `tailwind.config.js` obrigatório, e o antigo `@tailwind base; @tailwind components; @tailwind utilities;` foi substituído por um único `@import "tailwindcss";`. Se você encontrar um tutorial mais antigo usando esses comandos, ele está desatualizado: siga o que está aqui.
 
 ### > Para testar rapidamente (Play CDN)
 
@@ -153,13 +155,13 @@ Reforçando o ponto mais importante deste módulo: Tailwind é construído em ci
 <div class="flex items-center justify-between gap-4">
 ```
 
-O objetivo é que você consiga ler isso e pensar: *Flexbox, alinhamento vertical centralizado, distribuição com espaço entre os itens, espaçamento de 1rem entre eles*, não "essas são classes que fazem funcionar". Se você só decorar nomes de classes sem saber o CSS por trás, qualquer situação que fuja do óbvio (um bug, uma necessidade não coberta por uma utility pronta) vai te deixar travado.
+O objetivo é que você consiga ler isso e pensar: *Flexbox, alinhamento vertical centralizado, distribuição com espaço entre os itens, espaçamento de 1rem entre eles*, e não "essas são classes que fazem funcionar". Se você só decorar nomes de classes sem saber o CSS por trás, qualquer situação que fuja do óbvio (um bug, uma necessidade não coberta por uma utility pronta) vai te deixar travado.
 
 ## // Bom exemplo × mau exemplo
 
 **Mau exemplo**: copiar classes sem entender:
 
-> "Vi esse conjunto de classes em um template e colei, não sei o que cada uma faz, mas ficou parecido."
+> "Vi esse conjunto de classes em um template e colei. Não sei o que cada uma faz, mas ficou parecido."
 
 **Bom exemplo**: aplicar sabendo o que cada classe representa:
 
@@ -210,6 +212,6 @@ Resposta: porque essa classe é apenas uma forma abreviada de escrever `display:
 
 ---
 
-**Próximo módulo:** `11-design-system-no-codigo.md`, suas cores e espaçamentos já existem no Figma. Hora de transformar isso em tokens reais no código.
+**Próximo módulo:** `11-design-system-no-codigo.md`: suas cores e espaçamentos já existem no Figma. Hora de transformar isso em tokens reais no código.
 
 `Material de Estudo // Coffee & Code`

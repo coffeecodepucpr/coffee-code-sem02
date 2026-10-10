@@ -1,5 +1,7 @@
 # Módulo 11 | Design System em Código
 
+Português · [English](../docs-eng/11-design-system-in-code.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -10,7 +12,7 @@ Volte ao arquivo `/docs/design-system.md` que você criou na Semana 01. Ele tem 
 
 ## // O problema, de novo
 
-Você já viu essa ideia na Semana 01: cinco pessoas, cinco variações levemente diferentes da "mesma" cor primária, porque cada uma digitou o hex de memória. O mesmo risco existe em código:
+Você já viu essa ideia na Semana 01: cinco telas, cinco variações levemente diferentes da "mesma" cor primária, porque o hex foi digitado de memória em cada uma. O mesmo risco existe em código:
 
 ```css
 .botao-primario { background-color: #6f4e37; }
@@ -23,7 +25,7 @@ Um dígito errado, e a "mesma" cor já não é mais a mesma.
 ## // CSS Custom Properties (variáveis do CSS)
 
 > **CSS CUSTOM PROPERTIES: EM PALAVRAS SIMPLES**
-> São variáveis reais dentro do CSS; você define um valor uma vez, dá um nome a ele, e reutiliza esse nome em qualquer lugar do arquivo. Mudar o valor na definição muda automaticamente em todo lugar que usa aquele nome.
+> São variáveis reais dentro do CSS: você define um valor uma vez, dá um nome a ele, e reutiliza esse nome em qualquer lugar do arquivo. Mudar o valor na definição muda automaticamente em todo lugar que usa aquele nome.
 
 ```css
 :root {
@@ -33,7 +35,7 @@ Um dígito errado, e a "mesma" cor já não é mais a mesma.
 }
 ```
 
-`:root` é o elemento mais alto da página, declarar variáveis ali as torna disponíveis em qualquer seletor do arquivo inteiro. O prefixo `--` identifica que aquilo é uma custom property, não uma propriedade CSS nativa.
+`:root` é o elemento mais alto da página; declarar variáveis ali as torna disponíveis em qualquer seletor do arquivo inteiro. O prefixo `--` identifica que aquilo é uma custom property, não uma propriedade CSS nativa.
 
 ### > Usando a variável
 
@@ -132,7 +134,7 @@ Repare: nenhum valor solto (`#6f4e37`, `16px`) aparece diretamente nesses compon
 
 ## // Estados: além do padrão
 
-Um design system maduro não define só a aparência "normal" de um componente, define também como ele se comporta em diferentes estados:
+Um design system maduro não define só a aparência "normal" de um componente; define também como ele se comporta em diferentes estados:
 
 | Estado | Quando acontece | Exemplo de regra |
 |---|---|---|
@@ -203,7 +205,7 @@ Modelo sugerido para adicionar em `/docs/design-system.md`:
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Você decide mudar a cor primária do projeto inteiro. Com CSS Custom Properties bem aplicadas, quantos lugares no código precisam ser editados?
 
-Resposta: um só; a definição da variável dentro de `:root`. Todo componente que usa `var(--color-primary)` reflete a mudança automaticamente, sem precisar editar cada regra individualmente.
+Resposta: um só, a definição da variável dentro de `:root`. Todo componente que usa `var(--color-primary)` reflete a mudança automaticamente, sem precisar editar cada regra individualmente.
 
 ## // Resumo do módulo
 
@@ -215,6 +217,6 @@ Resposta: um só; a definição da variável dentro de `:root`. Todo componente 
 
 ---
 
-**Próximo módulo:** `12-acessibilidade.md`, seu projeto funciona para você. Vamos garantir que funcione para mais gente.
+**Próximo módulo:** `12-acessibilidade.md`: seu projeto funciona para você. Vamos garantir que funcione para mais gente.
 
 `Material de Estudo // Coffee & Code`

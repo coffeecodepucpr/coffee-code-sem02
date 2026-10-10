@@ -1,5 +1,7 @@
 # Módulo 13 | Componentização e Temas
 
+Português · [English](../docs-eng/13-componentization-and-themes.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -54,7 +56,7 @@ O objetivo, neste nível, é simples: identifique os componentes repetidos do se
 <button class="botao-primario">Editar</button>
 ```
 
-Três botões, uma única definição. Se você precisar mudar o visual do botão primário, muda em um lugar, reflete nos três.
+Três botões, uma única definição. Se você precisar mudar o visual do botão primário, muda em um lugar e reflete nos três.
 
 ## // Se você já tem experiência
 
@@ -103,7 +105,7 @@ Cada arquivo é conectado com seu próprio `<link>`, ou combinados via `@import`
 
 ### > Separação entre estrutura e apresentação
 
-Evite nomear classes pela aparência (`.texto-azul`, `.caixa-grande`), prefira nomear pela função (`.titulo-secao`, `.card-destaque`). Se a cor "azul" mudar para outra no futuro, uma classe chamada `.texto-azul` fica com um nome que não corresponde mais à realidade.
+Evite nomear classes pela aparência (`.texto-azul`, `.caixa-grande`); prefira nomear pela função (`.titulo-secao`, `.card-destaque`). Se a cor "azul" mudar para outra no futuro, uma classe chamada `.texto-azul` fica com um nome que não corresponde mais à realidade.
 
 ## // Tema claro/escuro
 
@@ -165,10 +167,10 @@ Essa media query detecta a preferência de tema já configurada no sistema opera
 
 ## // Prática guiada
 
-1. Liste, em texto mesmo, todos os componentes que se repetem no seu projeto (Navbar, Card, Button, Input, Avatar, ajuste para o que existir no seu caso).
+1. Liste, em texto mesmo, todos os componentes que se repetem no seu projeto (Navbar, Card, Button, Input, Avatar; ajuste para o que existir no seu caso).
 2. Para cada um, confirme: existe uma única classe CSS reutilizada em todo lugar que ele aparece? Se não, unifique.
 3. Adicione o bloco `[data-theme="dark"]` ao seu `styles.css`, com pelo menos `--bg` e `--text` redefinidos.
-4. Adicione `<html data-theme="dark">` temporariamente só para testar visualmente a troca, depois volte para `data-theme="light"` ou remova o atributo.
+4. Adicione `<html data-theme="dark">` temporariamente só para testar visualmente a troca; depois volte para `data-theme="light"` ou remova o atributo.
 
 ## // Pratique sozinho
 
@@ -198,6 +200,6 @@ Resposta: falta JavaScript. O CSS já prepara toda a base (as variáveis mudando
 
 ---
 
-**Próximo módulo:** `14-projeto-guiado.md`, juntando tudo, do início ao fim, nas três telas completas.
+**Próximo módulo:** `14-projeto-guiado.md`: juntando tudo, do início ao fim, nas três telas completas.
 
 `Material de Estudo // Coffee & Code`

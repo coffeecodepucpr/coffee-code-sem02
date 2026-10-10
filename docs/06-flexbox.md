@@ -1,5 +1,7 @@
 # Módulo 06 | Flexbox
 
+Português · [English](../docs-eng/06-flexbox.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -29,7 +31,7 @@ Precisamos de uma forma de controlar como os elementos filhos são distribuídos
 ## // O que é Flexbox
 
 > **FLEXBOX: EM PALAVRAS SIMPLES**
-> Flexbox é um modo de layout do CSS que organiza os filhos diretos de um elemento em uma única direção, linha ou coluna, controlando como esse espaço é distribuído entre eles.
+> Flexbox é um modo de layout do CSS que organiza os filhos diretos de um elemento em uma única direção (linha ou coluna), controlando como esse espaço é distribuído entre eles.
 
 ## // Container, items, e os dois eixos
 
@@ -43,7 +45,7 @@ Três termos aparecem em toda propriedade de Flexbox:
 <img src="assets/flex-main-cross-axis.svg" alt="Um flex container com três itens lado a lado, com o eixo principal horizontal e o eixo transversal vertical marcados" width="500">
 </div>
 
-O eixo principal depende da direção que você escolhe (`flex-direction`), se for `row` (linha, o padrão), o eixo principal é horizontal. Se for `column`, o eixo principal vira vertical, e o transversal, horizontal.
+O eixo principal depende da direção que você escolhe (`flex-direction`): se for `row` (linha, o padrão), o eixo principal é horizontal. Se for `column`, o eixo principal vira vertical, e o transversal, horizontal.
 
 ## // Ativando o Flexbox
 
@@ -66,7 +68,7 @@ Só essa linha já resolve o problema inicial: os `<button>` que eram filhos dir
 }
 ```
 
-`row` organiza na horizontal (o padrão); `column` organiza na vertical, como uma pilha, mas diferente do empilhamento natural do HTML, agora você controla o espaçamento e alinhamento entre os itens.
+`row` organiza na horizontal (o padrão); `column` organiza na vertical, como uma pilha. Mas, diferente do empilhamento natural do HTML, agora você controla o espaçamento e alinhamento entre os itens.
 
 ### > `justify-content` | alinhamento no eixo principal
 
@@ -110,7 +112,7 @@ Espaço fixo entre os itens, sem precisar de `margin` manual em cada um, e sem o
 }
 ```
 
-Por padrão, o Flexbox tenta espremer todos os itens em uma linha só, mesmo que fique apertado. `flex-wrap: wrap` permite que os itens quebrem para a próxima linha quando não couberem, importante para responsividade (Módulo 08).
+Por padrão, o Flexbox tenta espremer todos os itens em uma linha só, mesmo que fique apertado. `flex-wrap: wrap` permite que os itens quebrem para a próxima linha quando não couberem, o que é importante para responsividade (Módulo 08).
 
 ### > `flex-grow` e `flex-shrink` | aprofundamento
 
@@ -157,9 +159,9 @@ Por padrão, o Flexbox tenta espremer todos os itens em uma linha só, mesmo que
 ## // Checkpoint intermediário
 
 > **PENSE NISTO ANTES DE SEGUIR**
-> Se `flex-direction: column`, qual eixo `justify-content` controla agora; o vertical ou o horizontal?
+> Se `flex-direction: column`, qual eixo `justify-content` controla agora: o vertical ou o horizontal?
 
-Resposta: o vertical. O eixo principal muda junto com `flex-direction`, em `column`, o eixo principal passa a ser vertical, então `justify-content` (que sempre atua no eixo principal) passa a controlar o alinhamento vertical, e `align-items` passa a controlar o horizontal.
+Resposta: o vertical. O eixo principal muda junto com `flex-direction`: em `column`, o eixo principal passa a ser vertical, então `justify-content` (que sempre atua no eixo principal) passa a controlar o alinhamento vertical, e `align-items` passa a controlar o horizontal.
 
 ## // Prática guiada
 
@@ -171,7 +173,7 @@ Resposta: o vertical. O eixo principal muda junto com `flex-direction`, em `colu
 ## // Pratique sozinho
 
 > **DESAFIO**
-> Na tela de Perfil, organize o avatar e as informações do usuário (nome, e-mail) lado a lado usando Flexbox, avatar à esquerda, texto à direita, alinhados verticalmente ao centro. Depois, organize os botões de ação ("Editar perfil", "Sair") em uma linha separada, com `gap` entre eles.
+> Na tela de Perfil, organize o avatar e as informações do usuário (nome, e-mail) lado a lado usando Flexbox (avatar à esquerda, texto à direita), alinhados verticalmente ao centro. Depois, organize os botões de ação ("Editar perfil", "Sair") em uma linha separada, com `gap` entre eles.
 
 ## // Aplicando no projeto da semana
 
@@ -185,7 +187,7 @@ Resposta: o vertical. O eixo principal muda junto com `flex-direction`, em `colu
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Sua navbar tem o logo à esquerda e um grupo de links à direita. Flexbox ou Grid parece mais natural aqui? Justifique.
 
-Resposta: Flexbox, é um problema de organização em uma única dimensão (uma linha horizontal), exatamente o que Flexbox resolve. Grid entra quando o problema é bidimensional (linhas *e* colunas ao mesmo tempo), como veremos no próximo módulo com os cards do Dashboard.
+Resposta: Flexbox. É um problema de organização em uma única dimensão (uma linha horizontal), exatamente o que Flexbox resolve. Grid entra quando o problema é bidimensional (linhas *e* colunas ao mesmo tempo), como veremos no próximo módulo com os cards do Dashboard.
 
 ## // Resumo do módulo
 

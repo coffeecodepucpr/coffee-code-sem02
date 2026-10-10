@@ -1,5 +1,7 @@
 # Módulo 12 | Acessibilidade
 
+Português · [English](../docs-eng/12-accessibility.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -13,7 +15,7 @@ Acessibilidade não é um módulo isolado que você "faz por último"; é por is
 > **ACESSIBILIDADE: EM PALAVRAS SIMPLES**
 > É construir uma interface que funcione para o maior número possível de pessoas, incluindo quem não usa mouse, quem tem baixa visão, quem usa leitor de tela, quem tem dificuldade motora para cliques precisos.
 
-Não é um recurso "extra" para um grupo pequeno de pessoas, é, na prática, testar se sua interface depende de uma única forma de uso (mouse, visão perfeita, precisão de clique) para funcionar.
+Não é um recurso "extra" para um grupo pequeno de pessoas. É, na prática, testar se sua interface depende de uma única forma de uso (mouse, visão perfeita, precisão de clique) para funcionar.
 
 ## // Revisão: o que você já fez sem chamar de "acessibilidade"
 
@@ -30,11 +32,11 @@ Não é um recurso "extra" para um grupo pequeno de pessoas, é, na prática, te
 > **CONTRASTE: EM PALAVRAS SIMPLES**
 > É a diferença de luminosidade entre o texto e o fundo atrás dele. Contraste baixo demais torna o texto difícil de ler, não só para pessoas com baixa visão, mas para qualquer pessoa em uma tela com brilho fraco ou sob luz solar direta.
 
-Existe um padrão de referência chamado WCAG (Web Content Accessibility Guidelines) que define níveis mínimos de contraste. Você não precisa calcular isso manualmente, existem ferramentas gratuitas de checagem de contraste (busque "WCAG contrast checker") onde você insere as duas cores do seu design system e recebe um veredito. Faça esse teste com a combinação principal de texto/fundo do seu projeto.
+Existe um padrão de referência chamado WCAG (Web Content Accessibility Guidelines) que define níveis mínimos de contraste. Você não precisa calcular isso manualmente: existem ferramentas gratuitas de checagem de contraste (busque "WCAG contrast checker") onde você insere as duas cores do seu design system e recebe um veredito. Faça esse teste com a combinação principal de texto/fundo do seu projeto.
 
 ## // Tamanho de fonte e área de toque
 
-- **Tamanho de fonte**: evite textos menores que 16px para conteúdo principal, tamanhos muito pequenos são difíceis de ler, especialmente em telas de celular.
+- **Tamanho de fonte**: evite textos menores que 16px para conteúdo principal; tamanhos muito pequenos são difíceis de ler, especialmente em telas de celular.
 - **Área de toque**: botões e links precisam de uma área clicável/tocável mínima; uma referência comum é aproximadamente 44x44px. Um botão visualmente pequeno, mas com padding suficiente, ainda pode ter uma área de toque adequada.
 
 ## // Foco e `focus-visible`
@@ -107,7 +109,7 @@ Já visto no Módulo 03, repetido aqui porque é, sozinho, um dos erros de acess
 Para quem já tem o essencial consolidado:
 
 - **Landmarks**: as tags semânticas (`<header>`, `<nav>`, `<main>`, `<footer>`) já funcionam como landmarks (marcos de navegação) para leitores de tela. Você pode reforçar isso com atributos ARIA (`role="navigation"`), mas geralmente as tags semânticas corretas já bastam.
-- **ARIA, com cautela**: atributos `aria-*` (como `aria-label`, `aria-describedby`) complementam HTML quando a semântica nativa não é suficiente. Eles **não substituem** HTML semântico mal utilizado, adicionar `role="button"` em uma `<div>` não devolve o comportamento nativo de teclado que um `<button>` já tem de graça. Use ARIA para complementar, não para corrigir uma escolha de tag errada.
+- **ARIA, com cautela**: atributos `aria-*` (como `aria-label`, `aria-describedby`) complementam HTML quando a semântica nativa não é suficiente. Eles **não substituem** HTML semântico mal utilizado: adicionar `role="button"` em uma `<div>` não devolve o comportamento nativo de teclado que um `<button>` já tem de graça. Use ARIA para complementar, não para corrigir uma escolha de tag errada.
 - **`prefers-reduced-motion`**: uma media query que detecta se a pessoa configurou o sistema para reduzir animações (importante para quem tem sensibilidade a movimento). Fica como referência para quando o projeto tiver animações.
 - **Contraste WCAG**: nível AA é a referência mínima comum para projetos profissionais; nível AAA é mais rigoroso.
 
@@ -124,7 +126,7 @@ Para quem já tem o essencial consolidado:
 
 1. Navegue pela tela de Login usando só o teclado (Tab, Shift+Tab, Enter). Anote qualquer ponto onde a navegação não fez sentido.
 2. Verifique o contraste entre o texto e o fundo dos seus botões principais, usando uma ferramenta de checagem de contraste WCAG.
-3. Confirme que nenhum estado (erro, sucesso, desabilitado) depende só de cor, adicione texto ou ícone onde faltar.
+3. Confirme que nenhum estado (erro, sucesso, desabilitado) depende só de cor; adicione texto ou ícone onde faltar.
 
 ## // Pratique sozinho
 
@@ -156,6 +158,6 @@ Resposta: qualquer pessoa navegando pelo teclado, seja por preferência, seja po
 
 ---
 
-**Próximo módulo:** `13-componentizacao-e-temas.md`, reconhecendo padrões repetidos, e um primeiro tema claro/escuro.
+**Próximo módulo:** `13-componentizacao-e-temas.md`: reconhecendo padrões repetidos, e um primeiro tema claro/escuro.
 
 `Material de Estudo // Coffee & Code`

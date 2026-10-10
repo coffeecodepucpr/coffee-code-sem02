@@ -1,5 +1,7 @@
 # Módulo 14 | Projeto Guiado: Login, Dashboard e Perfil
 
+Português · [English](../docs-eng/14-guided-project.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -142,7 +144,7 @@ Commit final desta etapa: `git commit -m "Finaliza estrutura, layout e responsiv
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Se você tivesse que explicar para alguém, em três frases, por que a ordem HTML → CSS base → layout → responsividade → acessibilidade fez sentido (em vez de, por exemplo, começar pela responsividade), o que você diria?
 
-Resposta possível: sem HTML, não existe o que estilizar. Sem CSS base e Box Model entendidos, layout (Flexbox/Grid) fica imprevisível, porque os tamanhos das caixas não se comportam como esperado. E sem um layout principal já funcionando, não tem sentido adaptar esse layout para telas menores, responsividade ajusta algo que já existe, não substitui a etapa de criar esse algo primeiro.
+Resposta possível: sem HTML, não existe o que estilizar. Sem CSS base e Box Model entendidos, layout (Flexbox/Grid) fica imprevisível, porque os tamanhos das caixas não se comportam como esperado. E sem um layout principal já funcionando, não tem sentido adaptar esse layout para telas menores: responsividade ajusta algo que já existe, não substitui a etapa de criar esse algo primeiro.
 
 ## // Resumo do módulo
 
@@ -152,6 +154,6 @@ Resposta possível: sem HTML, não existe o que estilizar. Sem CSS base e Box Mo
 
 ---
 
-**Próximo módulo:** `15`, antes de considerar a semana concluída, uma revisão final contra os critérios reais do entregável (veja `entregavel.md`).
+**Próximo módulo:** `15`: antes de considerar a semana concluída, uma revisão final contra os critérios reais do entregável (veja `entregavel.md`).
 
 `Material de Estudo // Coffee & Code`

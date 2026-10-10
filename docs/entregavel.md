@@ -1,5 +1,7 @@
 # Entregável | Semana 02
 
+Português · [English](../docs-eng/deliverable.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 Use este arquivo como checklist final antes de considerar a Semana 02 concluída. Ele reúne o que é **obrigatório**: os desafios extras em `desafios.md` são opcionais.
@@ -63,7 +65,7 @@ Para deixar claro e evitar ansiedade desnecessária:
 
 - Não é esperado nenhum backend, banco de dados ou autenticação real.
 - Não é esperado JavaScript funcional (um botão de tema manual, por exemplo, é desafio opcional, não obrigatório).
-- Não é esperada perfeição visual pixel a pixel comparado ao Figma, pequenos ajustes de espaçamento e proporção são normais e esperados ao migrar de um design estático para HTML/CSS real.
+- Não é esperada perfeição visual pixel a pixel comparado ao Figma: pequenos ajustes de espaçamento e proporção são normais e esperados ao migrar de um design estático para HTML/CSS real.
 - Não é esperado que Tailwind tenha sido usado: CSS puro é uma entrega igualmente válida.
 
 > **A BELEZA NÃO É O CRITÉRIO**

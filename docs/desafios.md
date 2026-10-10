@@ -1,5 +1,7 @@
 # Desafios | Semana 02
 
+Português · [English](../docs-eng/challenges.md)
+
 Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório para a entrega básica; veja `entregavel.md` para o que é obrigatório. Use estes desafios se terminou os módulos principais e quer se aprofundar, ou se quer deixar o entregável mais robusto.
 
 ---
@@ -33,7 +35,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 **Se você já tem experiência**
 - No grid do Dashboard, use `grid-template-areas` (em vez de só `grid-template-columns`) para nomear explicitamente as regiões do layout, e pesquise a documentação oficial do MDN sobre essa propriedade antes de aplicar.
-- Combine `minmax()` com `auto-fit` no grid de cards, testando o comportamento sem nenhuma media query, compare com a versão que usa breakpoints fixos.
+- Combine `minmax()` com `auto-fit` no grid de cards, testando o comportamento sem nenhuma media query; compare com a versão que usa breakpoints fixos.
 
 ---
 
@@ -83,7 +85,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 - Documente, em `/docs/design-system.md`, a lista completa de componentes reutilizáveis do seu projeto e onde cada um aparece.
 
 **Se você já tem experiência**
-- Adicione um botão de troca de tema manual, usando JavaScript básico (`document.documentElement.setAttribute('data-theme'...)`) para alternar o atributo `data-theme` ao clicar, mesmo sabendo que JavaScript não é foco desta semana, este é um bom primeiro contato guiado por curiosidade, não por obrigação.
+- Adicione um botão de troca de tema manual, usando JavaScript básico (`document.documentElement.setAttribute('data-theme'...)`) para alternar o atributo `data-theme` ao clicar. Mesmo sabendo que JavaScript não é foco desta semana, este é um bom primeiro contato guiado por curiosidade, não por obrigação.
 
 ---
 

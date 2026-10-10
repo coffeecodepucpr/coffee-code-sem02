@@ -1,5 +1,7 @@
 # Módulo 09 | Do Figma para o Código
 
+Português · [English](../docs-eng/09-figma-to-code.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -8,7 +10,7 @@
 
 Você já sabe HTML, CSS, Flexbox, Grid e responsividade: as ferramentas. O que ainda falta é o raciocínio que conecta uma tela do Figma ao código: como olhar para um design e decidir, antes de escrever qualquer tag, quais elementos existem e como eles se organizam.
 
-Pular essa análise é a causa mais comum de HTML bagunçado, quem começa direto pelo código tende a criar estrutura ad-hoc, sem hierarquia clara, e descobre os problemas só depois, quando já é mais caro corrigir.
+Pular essa análise é a causa mais comum de HTML bagunçado: quem começa direto pelo código tende a criar estrutura ad-hoc, sem hierarquia clara, e descobre os problemas só depois, quando já é mais caro corrigir.
 
 ## // Analisando antes de codificar
 
@@ -125,13 +127,13 @@ Pergunta antes de codificar: `Avatar`, `UserInfo` e `Actions` deveriam ficar em 
 ## // Pratique sozinho
 
 > **DESAFIO**
-> Desenhe a árvore de componentes da tela de Login, incluindo o formulário. Depois, compare com o `login.html` que você já tem, existe alguma região que ficou sem uma tag clara representando ela (por exemplo, o formulário inteiro sem um container em volta)?
+> Desenhe a árvore de componentes da tela de Login, incluindo o formulário. Depois, compare com o `login.html` que você já tem: existe alguma região que ficou sem uma tag clara representando ela (por exemplo, o formulário inteiro sem um container em volta)?
 
 ## // Aplicando no projeto da semana
 
 1. Desenhe a árvore de componentes das três telas do seu projeto, a partir do Figma da Semana 01.
 2. Revise o HTML de cada tela, confirmando que a estrutura de tags corresponde à árvore desenhada.
-3. Ajuste qualquer trecho que tenha `position: absolute` sendo usado para montar o layout principal, substitua por Flexbox ou Grid.
+3. Ajuste qualquer trecho que tenha `position: absolute` sendo usado para montar o layout principal: substitua por Flexbox ou Grid.
 4. Commit: `git commit -m "Revisa estrutura HTML das três telas com base na análise do Figma"`.
 
 ## // Checkpoint
@@ -150,6 +152,6 @@ Resposta: porque decisões de estrutura (o que é filho de quê, quais regiões 
 
 ---
 
-**Próximo módulo:** `10-tailwind.md`, agora que CSS está sólido, uma forma mais rápida de escrever as mesmas regras.
+**Próximo módulo:** `10-tailwind.md`: agora que CSS está sólido, uma forma mais rápida de escrever as mesmas regras.
 
 `Material de Estudo // Coffee & Code`

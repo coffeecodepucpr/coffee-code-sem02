@@ -1,5 +1,7 @@
 # Módulo 01 | Como a Web Funciona
 
+Português · [English](../docs-eng/01-how-the-web-works.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -42,7 +44,7 @@ Nesta semana, todo o seu trabalho acontece em arquivos locais. Não existe ender
 > **NAVEGADOR: EM PALAVRAS SIMPLES**
 > O navegador é um programa que sabe ler arquivos HTML e CSS e transformar esse texto em algo visual, interativo, na tela.
 >
-> Tecnicamente: o navegador interpreta (faz o *parsing* de) o HTML, constrói uma representação em árvore do documento, aplica as regras CSS a essa árvore, e pinta o resultado na tela, processo chamado de renderização.
+> Tecnicamente: o navegador interpreta (faz o *parsing* de) o HTML, constrói uma representação em árvore do documento, aplica as regras CSS a essa árvore, e pinta o resultado na tela: processo chamado de renderização.
 
 Veja o caminho completo:
 
@@ -61,14 +63,14 @@ Uma forma simples de fixar a diferença, só como ponto de partida:
 > CSS é o acabamento: cor da parede, tipo de piso, organização visual.
 > JavaScript é o comportamento: a porta abrindo quando você aperta a campainha.
 
-Essa analogia serve só para memorizar os três papéis, abandone ela a partir daqui e pense nos termos técnicos reais:
+Essa analogia serve só para memorizar os três papéis; abandone ela a partir daqui e pense nos termos técnicos reais:
 
 - **HTML** define **estrutura**: o que existe na página e o que cada parte significa.
-- **CSS** define **apresentação**, como cada parte aparece visualmente.
+- **CSS** define **apresentação**: como cada parte aparece visualmente.
 - **JavaScript** define **comportamento**: o que acontece quando algo muda (um clique, uma digitação).
 
 > **IMPORTANTE**
-> JavaScript não é foco da Semana 02. Você vai ver a palavra algumas vezes, mas não vai escrever lógica de programação esta semana, só estrutura (HTML) e apresentação (CSS). Um botão pode existir, visualmente, sem nenhuma linha de JavaScript por trás.
+> JavaScript não é foco da Semana 02. Você vai ver a palavra algumas vezes, mas não vai escrever lógica de programação esta semana: só estrutura (HTML) e apresentação (CSS). Um botão pode existir, visualmente, sem nenhuma linha de JavaScript por trás.
 
 ## // Aplicando no projeto da semana
 
@@ -99,6 +101,6 @@ Resposta: Tailwind gera CSS; ele resolve a etapa de apresentação. Mas o navega
 
 ---
 
-**Próximo módulo:** `02-html.md`; a primeira peça do mecanismo: como dar estrutura a um texto.
+**Próximo módulo:** `02-html.md`: a primeira peça do mecanismo: como dar estrutura a um texto.
 
 `Material de Estudo // Coffee & Code`

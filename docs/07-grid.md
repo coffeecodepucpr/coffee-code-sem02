@@ -1,5 +1,7 @@
 # Módulo 07 | CSS Grid
 
+Português · [English](../docs-eng/07-grid.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -22,7 +24,7 @@ Dá para tentar forçar isso com Flexbox (`flex-wrap: wrap`), e às vezes até f
 ## // O que é CSS Grid
 
 > **GRID: EM PALAVRAS SIMPLES**
-> Grid é um modo de layout do CSS que organiza os filhos de um elemento em linhas e colunas ao mesmo tempo, como uma grade, diferente do Flexbox, que organiza em uma única direção.
+> Grid é um modo de layout do CSS que organiza os filhos de um elemento em linhas e colunas ao mesmo tempo, como uma grade. Diferente do Flexbox, que organiza em uma única direção.
 
 ## // Grid container, grid items, tracks
 
@@ -62,7 +64,7 @@ Repare que você não precisa dizer nada sobre linhas neste exemplo: o Grid cria
 grid-template-columns: 2fr 1fr;
 ```
 
-Isso cria duas colunas, onde a primeira ocupa o dobro do espaço da segunda, proporcional, não em pixels fixos. `fr` sempre divide o espaço *disponível* proporcionalmente, parecido com `flex-grow` no Flexbox, mas pensado para colunas e linhas inteiras.
+Isso cria duas colunas, onde a primeira ocupa o dobro do espaço da segunda: proporcional, não em pixels fixos. `fr` sempre divide o espaço *disponível* proporcionalmente, parecido com `flex-grow` no Flexbox, mas pensado para colunas e linhas inteiras.
 
 ## // `minmax()` | aprofundamento
 
@@ -151,7 +153,7 @@ Em vez de um número fixo de colunas, `auto-fit` deixa o navegador calcular quan
 > **ANTES DE SEGUIR, PENSE NISTO**
 > O Dashboard tem seis cards, organizados em duas dimensões (linhas e colunas). Qual ferramenta de layout parece mais natural, Flexbox ou Grid, e por quê?
 
-Resposta: Grid. O problema é genuinamente bidimensional, alinhar itens tanto em linhas quanto em colunas simultaneamente é exatamente o que Grid foi desenhado para fazer, com `grid-template-columns` controlando a estrutura de colunas e o navegador cuidando automaticamente das linhas.
+Resposta: Grid. O problema é genuinamente bidimensional: alinhar itens tanto em linhas quanto em colunas simultaneamente é exatamente o que Grid foi desenhado para fazer, com `grid-template-columns` controlando a estrutura de colunas e o navegador cuidando automaticamente das linhas.
 
 ## // Resumo do módulo
 
@@ -163,6 +165,6 @@ Resposta: Grid. O problema é genuinamente bidimensional, alinhar itens tanto em
 
 ---
 
-**Próximo módulo:** `08-responsividade.md`, seu layout está ótimo no desktop. Bora ver o que acontece no celular.
+**Próximo módulo:** `08-responsividade.md`: seu layout está ótimo no desktop. Bora ver o que acontece no celular.
 
 `Material de Estudo // Coffee & Code`

@@ -1,5 +1,7 @@
 # Módulo 08 | Responsividade
 
+Português · [English](../docs-eng/08-responsiveness.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -98,7 +100,7 @@ Um erro comum de quem está começando é pensar em responsividade como "deixar 
 - **Esconder elementos secundários**, quando fizer sentido (não esconder conteúdo essencial).
 - Mudar a **navegação** (menu horizontal que vira um ícone de menu no celular).
 - Ajustar **espaçamento**, não só tamanho de fonte.
-- **Ampliar a área de toque** de botões, em telas sensíveis ao toque, elementos pequenos demais são difíceis de acertar com o dedo.
+- **Ampliar a área de toque** de botões: em telas sensíveis ao toque, elementos pequenos demais são difíceis de acertar com o dedo.
 
 ## // Testando responsividade de verdade
 
@@ -152,6 +154,6 @@ Resposta: primeiro, se existe algum `width` fixo em pixels no card ou em algum e
 
 ---
 
-**Próximo módulo:** `09-figma-para-codigo.md`, juntando tudo: como decompor uma tela do Figma antes de escrever a primeira linha de código.
+**Próximo módulo:** `09-figma-para-codigo.md`: juntando tudo: como decompor uma tela do Figma antes de escrever a primeira linha de código.
 
 `Material de Estudo // Coffee & Code`

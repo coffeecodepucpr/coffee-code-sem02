@@ -1,5 +1,7 @@
 # Módulo 00 | Comece Aqui
 
+Português · [English](../docs-eng/00-start-here.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -60,8 +62,8 @@ Um botão de "Entrar" pode, e deve, existir visualmente esta semana, sem autenti
 Três coisas, especificamente:
 
 1. **O protótipo do Figma**: cada tela que você construir esta semana parte de uma tela que já existe lá. Você não está inventando layout novo, está traduzindo um layout já decidido.
-2. **O design system** (`/docs/design-system.md`), cores, tipografia e espaçamento que você definiu não são escolhidos de novo; eles viram valores reais no CSS.
-3. **O projeto contínuo**: se você seguiu a Semana 01 com o Buscador de Grupos de Estudo (plataforma para estudantes encontrarem grupos de estudo), é esse mesmo projeto que ganha interface agora. Se você já tinha um projeto próprio, o raciocínio é idêntico, só troque o nome.
+2. **O design system** (`/docs/design-system.md`): cores, tipografia e espaçamento que você definiu não são escolhidos de novo; eles viram valores reais no CSS.
+3. **O projeto contínuo**: se você seguiu a Semana 01 com o Buscador de Grupos de Estudo (plataforma para estudantes encontrarem grupos de estudo), é esse mesmo projeto que ganha interface agora. Se você já tinha um projeto próprio, o raciocínio é idêntico: só troque o nome.
 
 ## // Da Semana 01 à Semana 02, num mapa só
 
@@ -91,7 +93,7 @@ A pergunta que guia a semana inteira:
 
 > Como transformar uma interface planejada no Figma em uma página que o navegador consegue renderizar?
 
-Todo módulo daqui para frente existe para responder um pedaço dessa pergunta. HTML, CSS, Flexbox, Grid, responsividade e Tailwind não são cinco assuntos soltos, são cinco ferramentas que resolvem partes diferentes do mesmo problema.
+Todo módulo daqui para frente existe para responder um pedaço dessa pergunta. HTML, CSS, Flexbox, Grid, responsividade e Tailwind não são cinco assuntos soltos; são cinco ferramentas que resolvem partes diferentes do mesmo problema.
 
 ## // As duas trilhas
 
@@ -126,6 +128,6 @@ Cada módulo é um arquivo independente, mas foram escritos para serem lidos nes
 
 ---
 
-**Próximo módulo:** `01-como-a-web-funciona.md`, antes de escrever a primeira tag, entenda o que o navegador realmente faz com ela.
+**Próximo módulo:** `01-como-a-web-funciona.md`: antes de escrever a primeira tag, entenda o que o navegador realmente faz com ela.
 
 `Material de Estudo // Coffee & Code`

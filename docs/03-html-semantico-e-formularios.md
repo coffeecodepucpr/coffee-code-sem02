@@ -1,5 +1,7 @@
 # Módulo 03 | HTML Semântico e Formulários
 
+Português · [English](../docs-eng/03-semantic-html-and-forms.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -48,7 +50,7 @@ Reescrevendo o exemplo anterior com significado:
 </nav>
 ```
 
-Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma área de navegação, para quem lê o código, para o navegador, e para ferramentas que dependem de significado.
+Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma área de navegação: para quem lê o código, para o navegador e para ferramentas que dependem de significado.
 
 ### > As principais tags semânticas
 
@@ -66,13 +68,13 @@ Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma ár
 Três motivos concretos, não só "boa prática":
 
 1. **Leitura e manutenção**: quem abre seu código (inclusive você, meses depois) entende a estrutura sem precisar ler cada linha de conteúdo.
-2. **Acessibilidade**: leitores de tela (usados por pessoas com deficiência visual) navegam por região semântica. Um leitor de tela anuncia "navegação" ao chegar em um `<nav>`, em uma `<div>` genérica, ele não tem essa informação.
+2. **Acessibilidade**: leitores de tela (usados por pessoas com deficiência visual) navegam por região semântica. Um leitor de tela anuncia "navegação" ao chegar em um `<nav>`; em uma `<div>` genérica, ele não tem essa informação.
 3. **SEO, como complemento**: mecanismos de busca usam a estrutura semântica para entender do que a página trata. Isso não é o foco desta semana, mas é um efeito colateral positivo de fazer a coisa certa.
 
 > **`BUTTON` ≠ `DIV` CLICÁVEL**
-> **Errado:** `<div onclick="...">Entrar</div>`, visualmente pode até parecer um botão, mas para o navegador é uma div qualquer. Não recebe foco pelo teclado, não é anunciado como botão por leitores de tela, e depende de JavaScript até para o clique funcionar.
+> **Errado:** `<div onclick="...">Entrar</div>`. Visualmente pode até parecer um botão, mas para o navegador é uma div qualquer. Não recebe foco pelo teclado, não é anunciado como botão por leitores de tela, e depende de JavaScript até para o clique funcionar.
 >
-> **Certo:** `<button>Entrar</button>`, é um botão de verdade. Recebe foco pelo teclado (tecla Tab), é anunciado corretamente, e já vem com comportamento de clique embutido, sem precisar de nada extra.
+> **Certo:** `<button>Entrar</button>`. É um botão de verdade. Recebe foco pelo teclado (tecla Tab), é anunciado corretamente, e já vem com comportamento de clique embutido, sem precisar de nada extra.
 
 O mesmo vale para `<label>` e `alt`, que você já viu no Módulo 02: eles não são detalhes visuais, são significado que o HTML carrega antes mesmo do CSS entrar em cena.
 
@@ -115,7 +117,7 @@ Mesmo sem nenhum backend esta semana (lembra do Módulo 00: nada de autenticaç�
 <input type="email" id="email">
 ```
 
-O valor de `for` no label precisa ser idêntico ao `id` no input. Essa conexão faz duas coisas: clicar no texto "Email" foca automaticamente o campo, e leitores de tela anunciam corretamente qual rótulo pertence a qual campo. Sem essa conexão, o label é só um texto solto ao lado do campo, visualmente parecido, estruturalmente desconectado.
+O valor de `for` no label precisa ser idêntico ao `id` no input. Essa conexão faz duas coisas: clicar no texto "Email" foca automaticamente o campo, e leitores de tela anunciam corretamente qual rótulo pertence a qual campo. Sem essa conexão, o label é só um texto solto ao lado do campo: visualmente parecido, estruturalmente desconectado.
 
 ## // Estados de foco
 
@@ -186,7 +188,7 @@ Vamos completar a estrutura da tela de Login, que você começou no Módulo 02.
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Por que usar `<button>` é melhor que `<div class="button">` para uma ação, mesmo que os dois possam ficar visualmente idênticos depois do CSS?
 
-Resposta: `<button>` já vem com significado e comportamento nativos do navegador, recebe foco pelo teclado, é ativável com Enter/Espaço, e é anunciado corretamente por leitores de tela. Uma `<div>` não tem nada disso por padrão; para igualar o comportamento, seria preciso adicionar manualmente atributos e JavaScript, trabalho extra para chegar a algo que `<button>` já oferece de graça.
+Resposta: `<button>` já vem com significado e comportamento nativos do navegador: recebe foco pelo teclado, é ativável com Enter/Espaço, e é anunciado corretamente por leitores de tela. Uma `<div>` não tem nada disso por padrão; para igualar o comportamento, seria preciso adicionar manualmente atributos e JavaScript. Trabalho extra para chegar a algo que `<button>` já oferece de graça.
 
 ## // Resumo do módulo
 
@@ -198,6 +200,6 @@ Resposta: `<button>` já vem com significado e comportamento nativos do navegado
 
 ---
 
-**Próximo módulo:** `04-css.md`; a estrutura está pronta. Hora de fazer a página parecer com o que foi planejado no Figma.
+**Próximo módulo:** `04-css.md`: a estrutura está pronta. Hora de fazer a página parecer com o que foi planejado no Figma.
 
 `Material de Estudo // Coffee & Code`

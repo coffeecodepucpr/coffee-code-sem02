@@ -1,5 +1,7 @@
 # Módulo 04 | CSS: Como o Navegador Estiliza a Página
 
+Português · [English](../docs-eng/04-css.md)
+
 `SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
@@ -13,7 +15,7 @@ Quase certamente não. Título e parágrafo em preto, campos sem espaçamento, b
 ## // O que é CSS?
 
 > **CSS: EM PALAVRAS SIMPLES**
-> CSS é a linguagem que descreve como cada elemento HTML deve aparecer, cor, tamanho, espaçamento, posição.
+> CSS é a linguagem que descreve como cada elemento HTML deve aparecer: cor, tamanho, espaçamento, posição.
 >
 > Tecnicamente: CSS (Cascading Style Sheets, "folhas de estilo em cascata") é uma linguagem de estilização que seleciona elementos HTML e aplica declarações de aparência a eles. "Cascata", a parte mais importante do nome, descreve como o navegador decide qual regra vence quando mais de uma poderia se aplicar ao mesmo elemento. Voltamos a isso em breve.
 
@@ -60,7 +62,7 @@ Afeta **todos** os `<button>` da página, sem exceção.
 }
 ```
 
-O ponto (`.`) antes do nome indica que é uma classe. Diferente do seletor de elemento, uma classe só afeta elementos que a recebem explicitamente, útil quando nem todo botão da página deve ser igual (um botão "Entrar" e um botão "Cancelar" provavelmente não deveriam ter a mesma cor).
+O ponto (`.`) antes do nome indica que é uma classe. Diferente do seletor de elemento, uma classe só afeta elementos que a recebem explicitamente. Isso é útil quando nem todo botão da página deve ser igual (um botão "Entrar" e um botão "Cancelar" provavelmente não deveriam ter a mesma cor).
 
 ### > Seletor de ID (contextualizando)
 
@@ -70,7 +72,7 @@ O ponto (`.`) antes do nome indica que é uma classe. Diferente do seletor de el
 }
 ```
 
-O `#` seleciona pelo atributo `id`. Diferente de classes, um `id` deve ser único na página, só um elemento pode ter aquele `id`. Na prática, classes são usadas com muito mais frequência que IDs para estilização, justamente porque um estilo reutilizável (como um botão) normalmente precisa se aplicar a vários elementos, não a um só.
+O `#` seleciona pelo atributo `id`. Diferente de classes, um `id` deve ser único na página: só um elemento pode ter aquele `id`. Na prática, classes são usadas com muito mais frequência que IDs para estilização, justamente porque um estilo reutilizável (como um botão) normalmente precisa se aplicar a vários elementos, não a um só.
 
 ### > Pseudo-classes (introdução)
 
@@ -80,7 +82,7 @@ button:hover {
 }
 ```
 
-`:hover` seleciona o elemento apenas quando o mouse está sobre ele. Existem várias pseudo-classes, vamos ver `:focus` com mais profundidade no Módulo 12 (Acessibilidade), porque ela é essencial para quem navega pelo teclado.
+`:hover` seleciona o elemento apenas quando o mouse está sobre ele. Existem várias pseudo-classes; vamos ver `:focus` com mais profundidade no Módulo 12 (Acessibilidade), porque ela é essencial para quem navega pelo teclado.
 
 ## // Cascade, inheritance e specificity | em nível introdutório
 
@@ -101,7 +103,7 @@ button {
 }
 ```
 
-Um `<button class="btn-secundario">` fica com texto preto, porque um seletor de classe é mais específico que um seletor de elemento. Isso é **specificity**: uma forma de medir o "peso" de um seletor. Você não precisa decorar uma tabela de pontuação de specificity esta semana, só entender que classes pesam mais que elementos, e que isso explica por que "minha regra não está funcionando" quase sempre significa "outra regra mais específica está vencendo".
+Um `<button class="btn-secundario">` fica com texto preto, porque um seletor de classe é mais específico que um seletor de elemento. Isso é **specificity**: uma forma de medir o "peso" de um seletor. Você não precisa decorar uma tabela de pontuação de specificity esta semana; só entender que classes pesam mais que elementos, e que isso explica por que "minha regra não está funcionando" quase sempre significa "outra regra mais específica está vencendo".
 
 > **INHERITANCE: EM PALAVRAS SIMPLES**
 > Alguns estilos (como cor de texto e fonte) passam automaticamente de um elemento pai para seus filhos, a não ser que o filho tenha sua própria regra. Se você define a fonte no `<body>`, todos os elementos dentro dele herdam essa fonte, sem precisar repetir a regra em cada um.
@@ -125,7 +127,7 @@ perfil.html
 styles.css
 ```
 
-Um arquivo `.css` compartilhado entre as três páginas garante que um botão tenha a mesma aparência em todas elas, mudar a cor uma vez muda nas três telas de uma vez, em vez de editar em três lugares separados.
+Um arquivo `.css` compartilhado entre as três páginas garante que um botão tenha a mesma aparência em todas elas: mudar a cor uma vez muda nas três telas de uma vez, em vez de editar em três lugares separados.
 
 ### > Conectando o arquivo
 
@@ -215,6 +217,6 @@ Resposta: a cor definida em `.btn-cancelar`, porque um seletor de classe é mais
 
 ---
 
-**Próximo módulo:** `05-box-model-e-unidades.md`, por que seu elemento de 300px raramente ocupa exatamente 300px.
+**Próximo módulo:** `05-box-model-e-unidades.md`: por que seu elemento de 300px raramente ocupa exatamente 300px.
 
 `Material de Estudo // Coffee & Code`

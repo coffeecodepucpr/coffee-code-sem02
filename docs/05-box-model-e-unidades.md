@@ -1,16 +1,16 @@
-# Módulo 05 — Box Model, Tamanhos e Espaçamento
+# Módulo 05 | Box Model, Tamanhos e Espaçamento
 
-`SEM 02 // Interface Web — Parte 1: Layout`
+`SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
 ## // O problema
 
-Você define `width: 300px` em um elemento, adiciona um `padding` de 20px e uma `border` de 2px — e o elemento final não tem 300px de largura. Ele tem mais. Isso confunde praticamente todo mundo que começa com CSS, e a razão tem um nome: Box Model.
+Você define `width: 300px` em um elemento, adiciona um `padding` de 20px e uma `border` de 2px, e o elemento final não tem 300px de largura. Ele tem mais. Isso confunde praticamente todo mundo que começa com CSS, e a razão tem um nome: Box Model.
 
 ## // Todo elemento é uma caixa
 
-> **BOX MODEL — EM PALAVRAS SIMPLES**
+> **BOX MODEL: EM PALAVRAS SIMPLES**
 > O navegador trata praticamente todo elemento HTML como uma caixa retangular, composta por quatro camadas, uma dentro da outra: conteúdo, espaçamento interno, borda e espaçamento externo.
 
 <div align="center">
@@ -19,7 +19,7 @@ Você define `width: 300px` em um elemento, adiciona um `padding` de 20px e uma 
 
 | Camada | O que é |
 |---|---|
-| `content` | O conteúdo em si — texto, imagem — e as dimensões definidas por `width`/`height` |
+| `content` | O conteúdo em si: texto, imagem, e as dimensões definidas por `width`/`height` |
 | `padding` | Espaço interno, entre o conteúdo e a borda |
 | `border` | O contorno da caixa |
 | `margin` | Espaço externo, que afasta essa caixa das caixas vizinhas |
@@ -28,8 +28,8 @@ Você define `width: 300px` em um elemento, adiciona um `padding` de 20px e uma 
 
 Os dois criam espaço, mas em lugares opostos:
 
-- **Padding** empurra o conteúdo para *dentro* da própria caixa — aumenta a caixa, mantendo distância entre o conteúdo e a borda.
-- **Margin** empurra a caixa inteira para *longe* de outras caixas — não afeta o tamanho da caixa em si, afeta o espaço ao redor dela.
+- **Padding** empurra o conteúdo para *dentro* da própria caixa, aumenta a caixa, mantendo distância entre o conteúdo e a borda.
+- **Margin** empurra a caixa inteira para *longe* de outras caixas, não afeta o tamanho da caixa em si, afeta o espaço ao redor dela.
 
 ```css
 .card {
@@ -55,7 +55,7 @@ Por padrão, o navegador calcula `width` considerando **só o content**. Então 
 = 344px de largura total
 ```
 
-Ou seja: `width: 300px` não significa "esta caixa vai ocupar 300px" — significa "o conteúdo vai ter 300px, e padding/border se somam por cima".
+Ou seja: `width: 300px` não significa "esta caixa vai ocupar 300px", significa "o conteúdo vai ter 300px, e padding/border se somam por cima".
 
 ## // `box-sizing: border-box`
 
@@ -65,10 +65,10 @@ Ou seja: `width: 300px` não significa "esta caixa vai ocupar 300px" — signifi
 }
 ```
 
-Essa declaração muda a regra do cálculo: com `border-box`, o `width` passa a representar o tamanho **final** da caixa, já incluindo padding e border. No exemplo anterior, com `border-box`, a caixa teria exatamente 300px — o navegador reduz o espaço disponível para o conteúdo automaticamente, para caber padding e border dentro dos 300px.
+Essa declaração muda a regra do cálculo: com `border-box`, o `width` passa a representar o tamanho **final** da caixa, já incluindo padding e border. No exemplo anterior, com `border-box`, a caixa teria exatamente 300px: o navegador reduz o espaço disponível para o conteúdo automaticamente, para caber padding e border dentro dos 300px.
 
 > **POR QUE USAR `BORDER-BOX`**
-> Com `border-box`, o tamanho que você escreve é o tamanho que você recebe — muito mais previsível ao montar um layout. É por isso que praticamente todo projeto profissional começa o CSS com essa regra aplicada a `*` (todos os elementos), logo no topo do arquivo.
+> Com `border-box`, o tamanho que você escreve é o tamanho que você recebe, muito mais previsível ao montar um layout. É por isso que praticamente todo projeto profissional começa o CSS com essa regra aplicada a `*` (todos os elementos), logo no topo do arquivo.
 
 ## // Tamanhos e unidades
 
@@ -77,20 +77,20 @@ Nem todo número em CSS significa "pixels". Cada unidade resolve um problema dif
 | Unidade | Resolve | Exemplo |
 |---|---|---|
 | `px` | Tamanho fixo, exato | `border: 1px solid;` |
-| `%` | Tamanho relativo ao espaço disponível do elemento pai | `width: 100%;` — ocupa toda a largura disponível |
-| `rem` | Tamanho relativo ao tamanho de fonte base da página | `font-size: 1.5rem;` — escala junto se a base mudar |
-| `em` | Tamanho relativo ao tamanho de fonte do próprio elemento | Usado com cautela — pode compor de forma inesperada em elementos aninhados |
-| `vw` / `vh` | Porcentagem da largura/altura da **tela** (viewport) | `height: 100vh;` — ocupa a altura inteira da tela |
-| `fr` | Fração do espaço disponível — só existe dentro de Grid | Volta com detalhe no Módulo 07 |
+| `%` | Tamanho relativo ao espaço disponível do elemento pai | `width: 100%;`: ocupa toda a largura disponível |
+| `rem` | Tamanho relativo ao tamanho de fonte base da página | `font-size: 1.5rem;`: escala junto se a base mudar |
+| `em` | Tamanho relativo ao tamanho de fonte do próprio elemento | Usado com cautela: pode compor de forma inesperada em elementos aninhados |
+| `vw` / `vh` | Porcentagem da largura/altura da **tela** (viewport) | `height: 100vh;`: ocupa a altura inteira da tela |
+| `fr` | Fração do espaço disponível: só existe dentro de Grid | Volta com detalhe no Módulo 07 |
 
 > **QUANDO CADA UNIDADE PODE CAUSAR PROBLEMA**
-> `px` fixo demais para textos — não respeita configurações de acessibilidade do navegador da pessoa. `%` depende inteiramente do elemento pai ter um tamanho definido — sem isso, o resultado é imprevisível. `vh` em celulares pode se comportar de forma inconsistente por causa das barras do navegador mobile. Não existe unidade "certa" universal — existe a unidade certa para cada situação, e você vai desenvolver esse instinto com a prática.
+> `px` fixo demais para textos, não respeita configurações de acessibilidade do navegador da pessoa. `%` depende inteiramente do elemento pai ter um tamanho definido, sem isso, o resultado é imprevisível. `vh` em celulares pode se comportar de forma inconsistente por causa das barras do navegador mobile. Não existe unidade "certa" universal, existe a unidade certa para cada situação, e você vai desenvolver esse instinto com a prática.
 
-Para tamanho de fonte e espaçamento, `rem` costuma ser a escolha mais segura — é o padrão que vamos usar no design system em código, no Módulo 11.
+Para tamanho de fonte e espaçamento, `rem` costuma ser a escolha mais segura; é o padrão que vamos usar no design system em código, no Módulo 11.
 
 ## // Bom exemplo × mau exemplo
 
-**Mau exemplo** — tamanhos imprevisíveis, sem `border-box`:
+**Mau exemplo**: tamanhos imprevisíveis, sem `border-box`:
 
 ```css
 .card {
@@ -101,7 +101,7 @@ Para tamanho de fonte e espaçamento, `rem` costuma ser a escolha mais segura �
 }
 ```
 
-**Bom exemplo** — previsível, com `border-box` global:
+**Bom exemplo**: previsível, com `border-box` global:
 
 ```css
 * {
@@ -130,7 +130,7 @@ Para tamanho de fonte e espaçamento, `rem` costuma ser a escolha mais segura �
 1. No `styles.css`, adicione `* { box-sizing: border-box; }` como a primeira regra do arquivo.
 2. No formulário de Login, adicione `padding` aos campos (`input`) para que o texto digitado não fique colado na borda.
 3. Adicione `margin-bottom` entre os campos, para que não fiquem colados um no outro.
-4. Experimente remover temporariamente o `box-sizing: border-box` e observe visualmente a diferença no tamanho dos elementos — depois coloque de volta.
+4. Experimente remover temporariamente o `box-sizing: border-box` e observe visualmente a diferença no tamanho dos elementos, depois coloque de volta.
 
 ## // Pratique sozinho
 
@@ -148,7 +148,7 @@ Para tamanho de fonte e espaçamento, `rem` costuma ser a escolha mais segura �
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Seu botão tem `width: 200px`, `padding: 20px` e `border: 2px`. Com `box-sizing: content-box` (o padrão do navegador), ele realmente ocupa apenas 200px? Explique.
 
-Resposta: não. Com `content-box` (o padrão), `width` define só a área de conteúdo — padding e border se somam por fora. O tamanho final seria 200 + 20×2 + 2×2 = 244px. Só com `box-sizing: border-box` os 200px passariam a representar o tamanho total da caixa.
+Resposta: não. Com `content-box` (o padrão), `width` define só a área de conteúdo, padding e border se somam por fora. O tamanho final seria 200 + 20×2 + 2×2 = 244px. Só com `box-sizing: border-box` os 200px passariam a representar o tamanho total da caixa.
 
 ## // Resumo do módulo
 
@@ -160,6 +160,6 @@ Resposta: não. Com `content-box` (o padrão), `width` define só a área de con
 
 ---
 
-**Próximo módulo:** `06-flexbox.md` — três botões teimam em ficar empilhados. Hora de controlar como os elementos se distribuem.
+**Próximo módulo:** `06-flexbox.md`, três botões teimam em ficar empilhados. Hora de controlar como os elementos se distribuem.
 
 `Material de Estudo // Coffee & Code`

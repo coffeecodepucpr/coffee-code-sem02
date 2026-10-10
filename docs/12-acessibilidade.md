@@ -1,19 +1,19 @@
-# Módulo 12 — Acessibilidade
+# Módulo 12 | Acessibilidade
 
-`SEM 02 // Interface Web — Parte 1: Layout`
+`SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
 ## // Antes de começar
 
-Acessibilidade não é um módulo isolado que você "faz por último" — é por isso que boa parte do que você precisa já apareceu, espalhado, nos módulos anteriores: `<label>` no Módulo 03, `<button>` em vez de `<div>` clicável no Módulo 03, hierarquia de headings no Módulo 02, foco visível mencionado no Módulo 04. Este módulo reúne tudo isso, explica o porquê com mais profundidade, e adiciona o que ainda faltava.
+Acessibilidade não é um módulo isolado que você "faz por último"; é por isso que boa parte do que você precisa já apareceu, espalhado, nos módulos anteriores: `<label>` no Módulo 03, `<button>` em vez de `<div>` clicável no Módulo 03, hierarquia de headings no Módulo 02, foco visível mencionado no Módulo 04. Este módulo reúne tudo isso, explica o porquê com mais profundidade, e adiciona o que ainda faltava.
 
 ## // O que acessibilidade realmente significa aqui
 
-> **ACESSIBILIDADE — EM PALAVRAS SIMPLES**
-> É construir uma interface que funcione para o maior número possível de pessoas — incluindo quem não usa mouse, quem tem baixa visão, quem usa leitor de tela, quem tem dificuldade motora para cliques precisos.
+> **ACESSIBILIDADE: EM PALAVRAS SIMPLES**
+> É construir uma interface que funcione para o maior número possível de pessoas, incluindo quem não usa mouse, quem tem baixa visão, quem usa leitor de tela, quem tem dificuldade motora para cliques precisos.
 
-Não é um recurso "extra" para um grupo pequeno de pessoas — é, na prática, testar se sua interface depende de uma única forma de uso (mouse, visão perfeita, precisão de clique) para funcionar.
+Não é um recurso "extra" para um grupo pequeno de pessoas, é, na prática, testar se sua interface depende de uma única forma de uso (mouse, visão perfeita, precisão de clique) para funcionar.
 
 ## // Revisão: o que você já fez sem chamar de "acessibilidade"
 
@@ -27,15 +27,15 @@ Não é um recurso "extra" para um grupo pequeno de pessoas — é, na prática,
 
 ## // O que ainda falta: contraste
 
-> **CONTRASTE — EM PALAVRAS SIMPLES**
-> É a diferença de luminosidade entre o texto e o fundo atrás dele. Contraste baixo demais torna o texto difícil de ler — não só para pessoas com baixa visão, mas para qualquer pessoa em uma tela com brilho fraco ou sob luz solar direta.
+> **CONTRASTE: EM PALAVRAS SIMPLES**
+> É a diferença de luminosidade entre o texto e o fundo atrás dele. Contraste baixo demais torna o texto difícil de ler, não só para pessoas com baixa visão, mas para qualquer pessoa em uma tela com brilho fraco ou sob luz solar direta.
 
-Existe um padrão de referência chamado WCAG (Web Content Accessibility Guidelines) que define níveis mínimos de contraste. Você não precisa calcular isso manualmente — existem ferramentas gratuitas de checagem de contraste (busque "WCAG contrast checker") onde você insere as duas cores do seu design system e recebe um veredito. Faça esse teste com a combinação principal de texto/fundo do seu projeto.
+Existe um padrão de referência chamado WCAG (Web Content Accessibility Guidelines) que define níveis mínimos de contraste. Você não precisa calcular isso manualmente, existem ferramentas gratuitas de checagem de contraste (busque "WCAG contrast checker") onde você insere as duas cores do seu design system e recebe um veredito. Faça esse teste com a combinação principal de texto/fundo do seu projeto.
 
 ## // Tamanho de fonte e área de toque
 
-- **Tamanho de fonte**: evite textos menores que 16px para conteúdo principal — tamanhos muito pequenos são difíceis de ler, especialmente em telas de celular.
-- **Área de toque**: botões e links precisam de uma área clicável/tocável mínima — uma referência comum é aproximadamente 44x44px. Um botão visualmente pequeno, mas com padding suficiente, ainda pode ter uma área de toque adequada.
+- **Tamanho de fonte**: evite textos menores que 16px para conteúdo principal, tamanhos muito pequenos são difíceis de ler, especialmente em telas de celular.
+- **Área de toque**: botões e links precisam de uma área clicável/tocável mínima; uma referência comum é aproximadamente 44x44px. Um botão visualmente pequeno, mas com padding suficiente, ainda pode ter uma área de toque adequada.
 
 ## // Foco e `focus-visible`
 
@@ -49,7 +49,7 @@ button:focus {
 ```
 
 > **QUEM É PREJUDICADO**
-> Alguém que navega inteiramente pelo teclado — por preferência, ou por não conseguir usar mouse com precisão — depende desse contorno para saber onde está na página. Removê-lo sem colocar outra indicação visual no lugar deixa essa pessoa "perdida", sem saber qual elemento está ativo.
+> Alguém que navega inteiramente pelo teclado (por preferência, ou por não conseguir usar mouse com precisão) depende desse contorno para saber onde está na página. Removê-lo sem colocar outra indicação visual no lugar deixa essa pessoa "perdida", sem saber qual elemento está ativo.
 
 Se você quiser mudar a aparência do foco por motivos visuais, substitua por algo igualmente visível:
 
@@ -61,9 +61,9 @@ button:focus-visible {
 }
 ```
 
-`:focus-visible` (diferente de `:focus`) aplica o estilo só quando o navegador entende que o foco veio de navegação por teclado — não em todo clique de mouse. Isso evita o contorno aparecer em situações onde ele visualmente incomoda mais do que ajuda, sem removê-lo de onde ele é essencial.
+`:focus-visible` (diferente de `:focus`) aplica o estilo só quando o navegador entende que o foco veio de navegação por teclado, não em todo clique de mouse. Isso evita o contorno aparecer em situações onde ele visualmente incomoda mais do que ajuda, sem removê-lo de onde ele é essencial.
 
-## // Navegação por teclado — introdução
+## // Navegação por teclado | introdução
 
 Teste rápido: pegue qualquer uma das suas três telas, clique em um espaço vazio da página, e navegue só com a tecla Tab (Shift+Tab para voltar). Pergunte:
 
@@ -100,16 +100,16 @@ Pessoas com daltonismo (uma parcela relevante da população) podem não percebe
 <button type="submit">Entrar</button>
 ```
 
-Já visto no Módulo 03 — repetido aqui porque é, sozinho, um dos erros de acessibilidade mais comuns e mais fáceis de evitar.
+Já visto no Módulo 03, repetido aqui porque é, sozinho, um dos erros de acessibilidade mais comuns e mais fáceis de evitar.
 
 ## // Aprofundamento
 
 Para quem já tem o essencial consolidado:
 
-- **Landmarks** — as tags semânticas (`<header>`, `<nav>`, `<main>`, `<footer>`) já funcionam como landmarks (marcos de navegação) para leitores de tela. Você pode reforçar isso com atributos ARIA (`role="navigation"`), mas geralmente as tags semânticas corretas já bastam.
-- **ARIA, com cautela** — atributos `aria-*` (como `aria-label`, `aria-describedby`) complementam HTML quando a semântica nativa não é suficiente. Eles **não substituem** HTML semântico mal utilizado — adicionar `role="button"` em uma `<div>` não devolve o comportamento nativo de teclado que um `<button>` já tem de graça. Use ARIA para complementar, não para corrigir uma escolha de tag errada.
-- **`prefers-reduced-motion`** — uma media query que detecta se a pessoa configurou o sistema para reduzir animações (importante para quem tem sensibilidade a movimento). Fica como referência para quando o projeto tiver animações.
-- **Contraste WCAG** — nível AA é a referência mínima comum para projetos profissionais; nível AAA é mais rigoroso.
+- **Landmarks**: as tags semânticas (`<header>`, `<nav>`, `<main>`, `<footer>`) já funcionam como landmarks (marcos de navegação) para leitores de tela. Você pode reforçar isso com atributos ARIA (`role="navigation"`), mas geralmente as tags semânticas corretas já bastam.
+- **ARIA, com cautela**: atributos `aria-*` (como `aria-label`, `aria-describedby`) complementam HTML quando a semântica nativa não é suficiente. Eles **não substituem** HTML semântico mal utilizado, adicionar `role="button"` em uma `<div>` não devolve o comportamento nativo de teclado que um `<button>` já tem de graça. Use ARIA para complementar, não para corrigir uma escolha de tag errada.
+- **`prefers-reduced-motion`**: uma media query que detecta se a pessoa configurou o sistema para reduzir animações (importante para quem tem sensibilidade a movimento). Fica como referência para quando o projeto tiver animações.
+- **Contraste WCAG**: nível AA é a referência mínima comum para projetos profissionais; nível AAA é mais rigoroso.
 
 ## // Erros comuns
 
@@ -117,14 +117,14 @@ Para quem já tem o essencial consolidado:
 |---|---|---|
 | Remover `outline` do foco sem substituto | Parece "mais limpo" visualmente | Use `:focus-visible` com um estilo alternativo, nunca remova sem substituir |
 | Cor como único indicador de estado | Parece suficiente visualmente | Acompanhe com texto ou ícone |
-| `<div>` ou `<span>` fazendo papel de botão | Parece mais fácil de estilizar | Use `<button>` e estilize ele — CSS resolve toda a aparência |
+| `<div>` ou `<span>` fazendo papel de botão | Parece mais fácil de estilizar | Use `<button>` e estilize ele: CSS resolve toda a aparência |
 | ARIA usada para "consertar" HTML errado | Parece um atalho | Corrija a tag primeiro; ARIA complementa, não substitui |
 
 ## // Prática guiada
 
 1. Navegue pela tela de Login usando só o teclado (Tab, Shift+Tab, Enter). Anote qualquer ponto onde a navegação não fez sentido.
 2. Verifique o contraste entre o texto e o fundo dos seus botões principais, usando uma ferramenta de checagem de contraste WCAG.
-3. Confirme que nenhum estado (erro, sucesso, desabilitado) depende só de cor — adicione texto ou ícone onde faltar.
+3. Confirme que nenhum estado (erro, sucesso, desabilitado) depende só de cor, adicione texto ou ícone onde faltar.
 
 ## // Pratique sozinho
 
@@ -144,7 +144,7 @@ Para quem já tem o essencial consolidado:
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Seu botão não tem nenhum estado de foco visível. Quem é prejudicado por isso, especificamente?
 
-Resposta: qualquer pessoa navegando pelo teclado — seja por preferência, seja por não conseguir usar mouse com precisão (uma deficiência motora, por exemplo). Sem indicação visível de foco, essa pessoa perde a referência de onde está na página, tornando a navegação praticamente inutilizável.
+Resposta: qualquer pessoa navegando pelo teclado, seja por preferência, seja por não conseguir usar mouse com precisão (uma deficiência motora, por exemplo). Sem indicação visível de foco, essa pessoa perde a referência de onde está na página, tornando a navegação praticamente inutilizável.
 
 ## // Resumo do módulo
 
@@ -156,6 +156,6 @@ Resposta: qualquer pessoa navegando pelo teclado — seja por preferência, seja
 
 ---
 
-**Próximo módulo:** `13-componentizacao-e-temas.md` — reconhecendo padrões repetidos, e um primeiro tema claro/escuro.
+**Próximo módulo:** `13-componentizacao-e-temas.md`, reconhecendo padrões repetidos, e um primeiro tema claro/escuro.
 
 `Material de Estudo // Coffee & Code`

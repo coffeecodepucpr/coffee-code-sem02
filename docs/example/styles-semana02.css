@@ -1,4 +1,4 @@
-/* SEM 02 — Exemplo executável — Buscador de Grupos de Estudo
+/* SEM 02 | Exemplo executável | Buscador de Grupos de Estudo
    Referência, não gabarito obrigatório. Ver README.md da pasta example/. */
 
 * {
@@ -6,7 +6,7 @@
 }
 
 :root {
-  /* Cores — Creamy Latte / Warm Cappuccino / Caramel Roast / Mocha Bean / Espresso Shot */
+  /* Cores | Creamy Latte / Warm Cappuccino / Caramel Roast / Mocha Bean / Espresso Shot */
   --color-bg: #E6D6C1;
   --color-surface: #F3E9D7;
   --color-surface-alt: #EFE3D0;

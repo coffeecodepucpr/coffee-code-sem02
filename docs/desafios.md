@@ -1,22 +1,22 @@
-# Desafios — Semana 02
+# Desafios | Semana 02
 
-Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório para a entrega básica — veja `entregavel.md` para o que é obrigatório. Use estes desafios se terminou os módulos principais e quer se aprofundar, ou se quer deixar o entregável mais robusto.
+Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório para a entrega básica; veja `entregavel.md` para o que é obrigatório. Use estes desafios se terminou os módulos principais e quer se aprofundar, ou se quer deixar o entregável mais robusto.
 
 ---
 
-## // HTML e Formulários (Módulos 02–03)
+## // HTML e Formulários (Módulos 02 a 03)
 
 **Se você está começando**
 - Adicione validação nativa extra ao formulário de Login: `minlength` na senha, e uma mensagem de erro customizada usando o atributo `title`.
 - Adicione um `<fieldset>` com `<legend>` agrupando os campos do formulário de cadastro, se você criou um.
 
 **Se você já tem experiência**
-- Pesquise sobre o atributo `autocomplete` em campos de formulário (por exemplo, `autocomplete="email"`) e aplique nos campos relevantes do Login — isso melhora o preenchimento automático do navegador.
+- Pesquise sobre o atributo `autocomplete` em campos de formulário (por exemplo, `autocomplete="email"`) e aplique nos campos relevantes do Login; isso melhora o preenchimento automático do navegador.
 - Adicione um segundo tipo de input relevante ao seu projeto (`type="tel"`, `type="date"`) em algum formulário do Perfil, com o `pattern` correspondente.
 
 ---
 
-## // CSS e Box Model (Módulos 04–05)
+## // CSS e Box Model (Módulos 04 a 05)
 
 **Se você está começando**
 - Crie uma segunda variação de botão (`.botao-secundario`) com cores diferentes da principal, mas reaproveitando `--spacing` e `--radius` do seu design system.
@@ -26,14 +26,14 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 
 ---
 
-## // Flexbox e Grid (Módulos 06–07)
+## // Flexbox e Grid (Módulos 06 a 07)
 
 **Se você está começando**
 - Adicione um estado vazio para o Dashboard: o que aparece na área de cards se não houver nenhum grupo? Estilize esse estado (mesmo que simples) usando Flexbox para centralizar uma mensagem.
 
 **Se você já tem experiência**
 - No grid do Dashboard, use `grid-template-areas` (em vez de só `grid-template-columns`) para nomear explicitamente as regiões do layout, e pesquise a documentação oficial do MDN sobre essa propriedade antes de aplicar.
-- Combine `minmax()` com `auto-fit` no grid de cards, testando o comportamento sem nenhuma media query — compare com a versão que usa breakpoints fixos.
+- Combine `minmax()` com `auto-fit` no grid de cards, testando o comportamento sem nenhuma media query, compare com a versão que usa breakpoints fixos.
 
 ---
 
@@ -63,7 +63,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 - Adicione ao menos duas variáveis de espaçamento que ainda não existem no seu `:root` (por exemplo, `--spacing-2xl`), documentando a decisão em `/docs/design-system.md`.
 
 **Se você já tem experiência**
-- Pesquise sobre `@property` (registro tipado de custom properties em CSS) e avalie se faria sentido aplicar em alguma variável do seu projeto — não é obrigatório usar, só entender o que resolve.
+- Pesquise sobre `@property` (registro tipado de custom properties em CSS) e avalie se faria sentido aplicar em alguma variável do seu projeto; não é obrigatório usar, só entender o que resolve.
 
 ---
 
@@ -83,7 +83,7 @@ Desafios opcionais, organizados pelos módulos da semana. Nenhum é obrigatório
 - Documente, em `/docs/design-system.md`, a lista completa de componentes reutilizáveis do seu projeto e onde cada um aparece.
 
 **Se você já tem experiência**
-- Adicione um botão de troca de tema manual, usando JavaScript básico (`document.documentElement.setAttribute('data-theme', ...)`) para alternar o atributo `data-theme` ao clicar — mesmo sabendo que JavaScript não é foco desta semana, este é um bom primeiro contato guiado por curiosidade, não por obrigação.
+- Adicione um botão de troca de tema manual, usando JavaScript básico (`document.documentElement.setAttribute('data-theme'...)`) para alternar o atributo `data-theme` ao clicar, mesmo sabendo que JavaScript não é foco desta semana, este é um bom primeiro contato guiado por curiosidade, não por obrigação.
 
 ---
 

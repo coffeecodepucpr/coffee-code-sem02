@@ -1,21 +1,21 @@
-# ☕ Coffee & Code — SEM 02 | Interface Web (Parte 1: Layout)
+# Coffee & Code | SEM 02 | Interface Web (Parte 1: Layout)
 
 ```text
 > module: sem-02
-> tema: interface web — layout
+> tema: interface web (layout)
 > status: online
-> coffee loaded ✓
+> coffee loaded
 ```
 
 Material da **Semana 02** da trilha do Coffee & Code, clube de tecnologia fundado por estudantes de Engenharia de Software da PUCPR e aberto a todos que querem aprender construindo.
 
-Na Semana 01 você planejou. Nesta semana você constrói. Aquele protótipo do Figma é uma representação da interface — não é a interface. Um arquivo do Figma não roda no navegador de ninguém.
+Na Semana 01 você planejou. Nesta semana você constrói. Aquele protótipo do Figma é uma representação da interface; não é a interface. Um arquivo do Figma não roda no navegador de ninguém.
 
 A Semana 02 existe para fechar essa distância: pegar o que foi decidido e transformar em HTML e CSS reais. No fim da semana você abre as suas três telas no navegador, redimensiona a janela até o tamanho de um celular, e nada quebra.
 
 ## Por onde começar
 
-👉 **[docs/00-comece-aqui.md](docs/00-comece-aqui.md)** — leia este primeiro. Ele explica o caminho da semana e como estudar.
+**[docs/00-comece-aqui.md](docs/00-comece-aqui.md)**: leia este primeiro. Ele explica o caminho da semana e como estudar.
 
 Depois, siga os módulos na ordem:
 
@@ -27,7 +27,7 @@ Depois, siga os módulos na ordem:
 | 04 | [CSS](docs/04-css.md) | Seletores, cascade, conectando CSS ao HTML |
 | 05 | [Box Model e unidades](docs/05-box-model-e-unidades.md) | `border-box`, padding, margin, px/rem/%/vh |
 | 06 | [Flexbox](docs/06-flexbox.md) | Eixos, alinhamento, distribuição |
-| 07 | [Grid](docs/07-grid.md) | Linhas, colunas, `fr` — e quando não usar Flexbox |
+| 07 | [Grid](docs/07-grid.md) | Linhas, colunas, `fr`: e quando não usar Flexbox |
 | 08 | [Responsividade](docs/08-responsividade.md) | Viewport, breakpoints, mobile-first |
 | 09 | [Do Figma para o código](docs/09-figma-para-codigo.md) | Decompondo uma tela antes de codificar |
 | 10 | [Tailwind](docs/10-tailwind.md) | Utility-first CSS com Tailwind v4 |
@@ -38,15 +38,15 @@ Depois, siga os módulos na ordem:
 
 E, para consultar quando precisar:
 
-- 💻 [Exemplo executável](docs/example/) — as três telas em HTML/CSS puro, para consulta
-- 🎯 [Desafios](docs/desafios.md) — opcionais, para ir além do pedido
-- ✅ [Entregável](docs/entregavel.md) — checklist final antes de fechar a semana
+- [Exemplo executável](docs/example/): as três telas em HTML/CSS puro, para consulta
+- [Desafios](docs/desafios.md): opcionais, para ir além do pedido
+- [Entregável](docs/entregavel.md): checklist final antes de fechar a semana
 
 ## O exemplo executável
 
 A pasta [`docs/example/`](docs/example/) tem uma implementação de referência das três telas, em HTML e CSS puro. Baixe o repositório e abra o `index-semana02.html` no navegador para navegar entre elas.
 
-É material de **consulta, não gabarito**. O seu projeto tem as suas próprias telas, decididas na Semana 01 — o exemplo serve para você ver uma solução possível quando travar, não para copiar.
+É material de **consulta, não gabarito**. O seu projeto tem as suas próprias telas, decididas na Semana 01: o exemplo serve para você ver uma solução possível quando travar, não para copiar.
 
 ## O entregável
 
@@ -72,7 +72,7 @@ Projetos de quem entregou a Semana 02. Quer entregar o seu? Veja [como entregar]
 
 | Pessoa | Projeto | Sobre | Links |
 |---|---|---|---|
-| Pedro Henrique Gouveia | — | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
+| Pedro Henrique Gouveia |: | Login, cadastro, dashboard com cursos de engenharia e perfil, com Tailwind | [repositório próprio](https://github.com/gorfofnf/coffee-and-code/tree/main/semana_2_entregavel) |
 | Guilherme Barbosa | Shelf Hub | Biblioteca pessoal de filmes, séries, livros, jogos e outros conteúdos | [pasta](entregas/Guilherme%20Barbosa/) · [Figma](https://www.figma.com/proto/qzzGhfapnxVoYsicLXboxt/Shelf-Hub?node-id=5-788&p=f&t=A6Dyj4L6kNFV6My3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A7) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Guilherme%20Barbosa/login.html) |
 | Luis Medina | Estom | Monitoramento de preços de produtos online | [pasta](entregas/Luis%20Medina/) · [Figma](https://www.figma.com/proto/oL9MehNA1Gea3Zhzh8I69z/Sem-t%C3%ADtulo?node-id=0-1&t=SoRcZQfwCZWOKUVi-1) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Luis%20Medina/index.html) |
 | Mikhail Kalinin | Online Learning Platform | Plataforma de cursos online que conecta professores e alunos | [pasta](entregas/Mikhail%20Kalinin/) · [ver telas](https://coffeecodepucpr.github.io/coffee-code-sem02/entregas/Mikhail%20Kalinin/pages/login.html) |
@@ -80,20 +80,20 @@ Projetos de quem entregou a Semana 02. Quer entregar o seu? Veja [como entregar]
 
 ## O que não entra nesta semana
 
-Para evitar ansiedade desnecessária: nada de backend, banco de dados ou autenticação real. JavaScript funcional não é esperado. Tailwind é opcional — CSS puro é uma entrega igualmente válida. E não se espera fidelidade pixel a pixel ao Figma: pequenos ajustes ao migrar de um design estático para HTML/CSS real são normais.
+Para evitar ansiedade desnecessária: nada de backend, banco de dados ou autenticação real. JavaScript funcional não é esperado. Tailwind é opcional: CSS puro é uma entrega igualmente válida. E não se espera fidelidade pixel a pixel ao Figma: pequenos ajustes ao migrar de um design estático para HTML/CSS real são normais.
 
 ## Projeto contínuo
 
-Todos os módulos usam o mesmo projeto fictício da Semana 01: o **Buscador de Grupos de Estudo**, uma plataforma para estudantes encontrarem colegas estudando a mesma matéria. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma — só troque o nome.
+Todos os módulos usam o mesmo projeto fictício da Semana 01: o **Buscador de Grupos de Estudo**, uma plataforma para estudantes encontrarem colegas estudando a mesma matéria. Se você tem um projeto próprio, o raciocínio de cada módulo se aplica da mesma forma, só troque o nome.
 
 ## Como funciona
 
 O Coffee & Code é **100% online**. Cada módulo foi escrito para ser autossuficiente: você estuda no seu ritmo, pode avançar mais rápido, voltar em semanas anteriores e consultar o material durante o projeto.
 
-Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu — **não para dar aula**:
+Os encontros semanais, também online, existem para tirar dúvidas, revisar conceitos, programar junto e mostrar o que você produziu, **não para dar aula**:
 
-- 🗓️ **quarta-feira** — 20h00 às 21h30
-- 🗓️ **sábado** — 10h00 às 11h30
+- **quarta-feira**: 20h00 às 21h30
+- **sábado**: 10h00 às 11h30
 
 Os dois trabalham o mesmo conteúdo. Escolha o que couber melhor na sua semana, e não precisa ficar o horário inteiro na call.
 
@@ -109,13 +109,13 @@ Todos os diagramas usados nos módulos estão em [`docs/assets/`](docs/assets/),
 
 ## Semanas anteriores
 
-- [SEM 01 — Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
+- [SEM 01: Kickoff & Design System](https://github.com/coffeecodepucpr/coffee-code-sem01)
 
 Trilha completa e próximas semanas: [perfil do Coffee & Code](https://github.com/coffeecodepucpr)
 
 ---
 
 ```text
-HTTP 418 — I'm a teapot
+HTTP 418: I'm a teapot
 > ready to code
 ```

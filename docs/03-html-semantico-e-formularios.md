@@ -1,12 +1,12 @@
-# Módulo 03 — HTML Semântico e Formulários
+# Módulo 03 | HTML Semântico e Formulários
 
-`SEM 02 // Interface Web — Parte 1: Layout`
+`SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
 ## // Antes de começar
 
-No Módulo 02 você viu a diferença entre `<div>Entrar</div>` e `<h1>Entrar</h1>` — o segundo carrega significado, o primeiro não. Este módulo aprofunda exatamente esse ponto, e fecha a estrutura completa da tela de Login com um formulário de verdade.
+No Módulo 02 você viu a diferença entre `<div>Entrar</div>` e `<h1>Entrar</h1>`: o segundo carrega significado, o primeiro não. Este módulo aprofunda exatamente esse ponto, e fecha a estrutura completa da tela de Login com um formulário de verdade.
 
 ## // O problema: divs dentro de divs dentro de divs
 
@@ -25,15 +25,15 @@ Um padrão comum em código HTML mal estruturado:
 </div>
 ```
 
-Pare e pergunte: o que cada `<div>` representa aqui? Sem ler o conteúdo de dentro, é impossível saber. A primeira poderia ser um cabeçalho, um rodapé, um aviso — não tem como saber só olhando a tag.
+Pare e pergunte: o que cada `<div>` representa aqui? Sem ler o conteúdo de dentro, é impossível saber. A primeira poderia ser um cabeçalho, um rodapé, um aviso; não tem como saber só olhando a tag.
 
 > **O PONTO PRINCIPAL**
-> `<div>` é um elemento genérico — ele agrupa conteúdo, mas não diz nada sobre o que esse conteúdo *é*. Usar `<div>` para tudo é como rotular todas as caixas de uma mudança como "coisas".
+> `<div>` é um elemento genérico; ele agrupa conteúdo, mas não diz nada sobre o que esse conteúdo *é*. Usar `<div>` para tudo é como rotular todas as caixas de uma mudança como "coisas".
 
 ## // HTML semântico
 
-> **HTML semântico — em palavras simples**
-> É usar tags que descrevem o papel do conteúdo, em vez de tags genéricas — de forma que o significado esteja no próprio HTML, antes de qualquer CSS.
+> **HTML semântico, em palavras simples**
+> É usar tags que descrevem o papel do conteúdo, em vez de tags genéricas, de forma que o significado esteja no próprio HTML, antes de qualquer CSS.
 
 Reescrevendo o exemplo anterior com significado:
 
@@ -48,7 +48,7 @@ Reescrevendo o exemplo anterior com significado:
 </nav>
 ```
 
-Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma área de navegação — para quem lê o código, para o navegador, e para ferramentas que dependem de significado.
+Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma área de navegação, para quem lê o código, para o navegador, e para ferramentas que dependem de significado.
 
 ### > As principais tags semânticas
 
@@ -56,7 +56,7 @@ Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma ár
 |---|---|
 | `<header>` | Cabeçalho de uma página ou seção |
 | `<nav>` | Área de navegação (menu, links principais) |
-| `<main>` | Conteúdo principal da página — deve existir só uma vez |
+| `<main>` | Conteúdo principal da página: deve existir só uma vez |
 | `<section>` | Uma seção temática de conteúdo |
 | `<article>` | Um conteúdo independente, que faria sentido sozinho |
 | `<footer>` | Rodapé de uma página ou seção |
@@ -65,20 +65,20 @@ Agora um `<header>` é claramente um cabeçalho, e `<nav>` é claramente uma ár
 
 Três motivos concretos, não só "boa prática":
 
-1. **Leitura e manutenção** — quem abre seu código (inclusive você, meses depois) entende a estrutura sem precisar ler cada linha de conteúdo.
-2. **Acessibilidade** — leitores de tela (usados por pessoas com deficiência visual) navegam por região semântica. Um leitor de tela anuncia "navegação" ao chegar em um `<nav>` — em uma `<div>` genérica, ele não tem essa informação.
-3. **SEO, como complemento** — mecanismos de busca usam a estrutura semântica para entender do que a página trata. Isso não é o foco desta semana, mas é um efeito colateral positivo de fazer a coisa certa.
+1. **Leitura e manutenção**: quem abre seu código (inclusive você, meses depois) entende a estrutura sem precisar ler cada linha de conteúdo.
+2. **Acessibilidade**: leitores de tela (usados por pessoas com deficiência visual) navegam por região semântica. Um leitor de tela anuncia "navegação" ao chegar em um `<nav>`, em uma `<div>` genérica, ele não tem essa informação.
+3. **SEO, como complemento**: mecanismos de busca usam a estrutura semântica para entender do que a página trata. Isso não é o foco desta semana, mas é um efeito colateral positivo de fazer a coisa certa.
 
 > **`BUTTON` ≠ `DIV` CLICÁVEL**
-> **Errado:** `<div onclick="...">Entrar</div>` — visualmente pode até parecer um botão, mas para o navegador é uma div qualquer. Não recebe foco pelo teclado, não é anunciado como botão por leitores de tela, e depende de JavaScript até para o clique funcionar.
+> **Errado:** `<div onclick="...">Entrar</div>`, visualmente pode até parecer um botão, mas para o navegador é uma div qualquer. Não recebe foco pelo teclado, não é anunciado como botão por leitores de tela, e depende de JavaScript até para o clique funcionar.
 >
-> **Certo:** `<button>Entrar</button>` — é um botão de verdade. Recebe foco pelo teclado (tecla Tab), é anunciado corretamente, e já vem com comportamento de clique embutido, sem precisar de nada extra.
+> **Certo:** `<button>Entrar</button>`, é um botão de verdade. Recebe foco pelo teclado (tecla Tab), é anunciado corretamente, e já vem com comportamento de clique embutido, sem precisar de nada extra.
 
 O mesmo vale para `<label>` e `alt`, que você já viu no Módulo 02: eles não são detalhes visuais, são significado que o HTML carrega antes mesmo do CSS entrar em cena.
 
 ## // Formulários
 
-> **FORM — EM PALAVRAS SIMPLES**
+> **FORM: EM PALAVRAS SIMPLES**
 > Um formulário é uma forma estruturada de coletar informação que uma pessoa preenche, para ser processada de algum jeito.
 
 Mesmo sem nenhum backend esta semana (lembra do Módulo 00: nada de autenticação real ainda), o formulário de Login já representa, estruturalmente, o que vai acontecer quando o backend existir: campos que a pessoa preenche, e um botão que dispara uma ação.
@@ -100,10 +100,10 @@ Mesmo sem nenhum backend esta semana (lembra do Módulo 00: nada de autenticaç�
 | Elemento/Atributo | O que faz |
 |---|---|
 | `<form>` | Agrupa os campos que pertencem à mesma submissão |
-| `<label>` | Rótulo de um campo — `for` conecta ao `id` do campo correspondente |
+| `<label>` | Rótulo de um campo: `for` conecta ao `id` do campo correspondente |
 | `<input type="email">` | Campo de texto, com validação básica de formato de e-mail pelo próprio navegador |
 | `<input type="password">` | Campo de texto que esconde o que é digitado |
-| `placeholder` | Texto de exemplo, que desaparece ao digitar — não substitui o `label` |
+| `placeholder` | Texto de exemplo, que desaparece ao digitar: não substitui o `label` |
 | `name` | Identifica o campo quando o formulário é enviado a um servidor (importante para semanas futuras, com backend) |
 | `required` | Impede o envio se o campo estiver vazio, sem precisar de nenhum código extra |
 | `<button type="submit">` | Botão que tenta enviar o formulário |
@@ -115,11 +115,11 @@ Mesmo sem nenhum backend esta semana (lembra do Módulo 00: nada de autenticaç�
 <input type="email" id="email">
 ```
 
-O valor de `for` no label precisa ser idêntico ao `id` no input. Essa conexão faz duas coisas: clicar no texto "Email" foca automaticamente o campo, e leitores de tela anunciam corretamente qual rótulo pertence a qual campo. Sem essa conexão, o label é só um texto solto ao lado do campo — visualmente parecido, estruturalmente desconectado.
+O valor de `for` no label precisa ser idêntico ao `id` no input. Essa conexão faz duas coisas: clicar no texto "Email" foca automaticamente o campo, e leitores de tela anunciam corretamente qual rótulo pertence a qual campo. Sem essa conexão, o label é só um texto solto ao lado do campo, visualmente parecido, estruturalmente desconectado.
 
 ## // Estados de foco
 
-Quando você navega por um formulário usando a tecla Tab, o navegador destaca visualmente o campo ativo — isso se chama estado de **foco**. Você não precisa fazer nada para que ele exista (o navegador já mostra um contorno padrão), mas vai ser importante lembrar dele quando chegarmos a CSS (Módulo 04) e Acessibilidade (Módulo 12): remover esse contorno sem colocar outra indicação visual no lugar prejudica diretamente quem navega pelo teclado.
+Quando você navega por um formulário usando a tecla Tab, o navegador destaca visualmente o campo ativo; isso se chama estado de **foco**. Você não precisa fazer nada para que ele exista (o navegador já mostra um contorno padrão), mas vai ser importante lembrar dele quando chegarmos a CSS (Módulo 04) e Acessibilidade (Módulo 12): remover esse contorno sem colocar outra indicação visual no lugar prejudica diretamente quem navega pelo teclado.
 
 ## // Bom exemplo × mau exemplo
 
@@ -155,7 +155,7 @@ Nenhum `label` conectado, senha em um campo `text` comum (mostra os caracteres!)
 |---|---|---|
 | `for` e `id` não combinam | Digitar rápido, ou copiar/colar sem ajustar | Sempre confira os dois lado a lado |
 | Usar `type="text"` para senha | Esquecer que existe um tipo específico | Use `type="password"` |
-| `<div>` clicável no lugar de `<button>` | Parece mais fácil estilizar uma div | Use `<button>` e estilize ele — CSS resolve a aparência (Módulo 04) |
+| `<div>` clicável no lugar de `<button>` | Parece mais fácil estilizar uma div | Use `<button>` e estilize ele: CSS resolve a aparência (Módulo 04) |
 | `placeholder` no lugar de `label` | Parece redundante ter os dois | `placeholder` some ao digitar; sem `label`, ninguém sabe o que preencher depois disso |
 
 ## // Prática guiada
@@ -167,7 +167,7 @@ Vamos completar a estrutura da tela de Login, que você começou no Módulo 02.
 3. Adicione um `<main>` logo abaixo, contendo o restante da tela.
 4. Dentro do `<main>`, adicione um `<form>` com os campos de e-mail e senha, seguindo a estrutura desta seção.
 5. Adicione o `<button type="submit">Entrar</button>`.
-6. Abra o arquivo no navegador. Clique no texto "Email" — o campo recebe foco? Use Tab para navegar entre os campos — a ordem faz sentido?
+6. Abra o arquivo no navegador. Clique no texto "Email": o campo recebe foco? Use Tab para navegar entre os campos: a ordem faz sentido?
 
 ## // Pratique sozinho
 
@@ -186,7 +186,7 @@ Vamos completar a estrutura da tela de Login, que você começou no Módulo 02.
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Por que usar `<button>` é melhor que `<div class="button">` para uma ação, mesmo que os dois possam ficar visualmente idênticos depois do CSS?
 
-Resposta: `<button>` já vem com significado e comportamento nativos do navegador — recebe foco pelo teclado, é ativável com Enter/Espaço, e é anunciado corretamente por leitores de tela. Uma `<div>` não tem nada disso por padrão; para igualar o comportamento, seria preciso adicionar manualmente atributos e JavaScript — trabalho extra para chegar a algo que `<button>` já oferece de graça.
+Resposta: `<button>` já vem com significado e comportamento nativos do navegador, recebe foco pelo teclado, é ativável com Enter/Espaço, e é anunciado corretamente por leitores de tela. Uma `<div>` não tem nada disso por padrão; para igualar o comportamento, seria preciso adicionar manualmente atributos e JavaScript, trabalho extra para chegar a algo que `<button>` já oferece de graça.
 
 ## // Resumo do módulo
 
@@ -198,6 +198,6 @@ Resposta: `<button>` já vem com significado e comportamento nativos do navegado
 
 ---
 
-**Próximo módulo:** `04-css.md` — a estrutura está pronta. Hora de fazer a página parecer com o que foi planejado no Figma.
+**Próximo módulo:** `04-css.md`; a estrutura está pronta. Hora de fazer a página parecer com o que foi planejado no Figma.
 
 `Material de Estudo // Coffee & Code`

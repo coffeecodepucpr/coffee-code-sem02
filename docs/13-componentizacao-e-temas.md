@@ -1,6 +1,6 @@
-# Módulo 13 — Componentização e Temas
+# Módulo 13 | Componentização e Temas
 
-`SEM 02 // Interface Web — Parte 1: Layout`
+`SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
@@ -14,12 +14,12 @@ Olhe para o seu próprio CSS neste ponto da semana. É provável que você tenha
 <button class="...">Editar</button>
 ```
 
-Cada botão, reescrito do zero, corre o risco de sair levemente diferente — um com `padding: 12px`, outro com `padding: 10px 14px`, sem ninguém decidir isso conscientemente.
+Cada botão, reescrito do zero, corre o risco de sair levemente diferente: um com `padding: 12px`, outro com `padding: 10px 14px`, sem ninguém decidir isso conscientemente.
 
 ## // Pensamento em componentes
 
-> **COMPONENTIZAÇÃO — EM PALAVRAS SIMPLES**
-> É reconhecer que um pedaço de interface se repete, e tratar ele como uma unidade reutilizável — uma classe, um padrão — em vez de recriar do zero toda vez que aparece.
+> **COMPONENTIZAÇÃO: EM PALAVRAS SIMPLES**
+> É reconhecer que um pedaço de interface se repete, e tratar ele como uma unidade reutilizável (uma classe, um padrão) em vez de recriar do zero toda vez que aparece.
 
 Nesta semana, sem usar nenhum framework de componentes (React entra em semanas futuras do clube), "componentizar" significa: identificar padrões repetidos e reutilizar classes CSS consistentes para eles.
 
@@ -29,11 +29,11 @@ Nesta semana, sem usar nenhum framework de componentes (React entra em semanas f
 
 No seu próprio Dashboard, é bem provável que existam pelo menos estes padrões repetidos:
 
-- **Navbar** — aparece em toda tela.
-- **Card** — se repete várias vezes no grid, e talvez reapareça no Perfil.
-- **Button** — usado em Login, Dashboard e Perfil.
-- **Input** — usado no formulário de Login, e talvez em uma busca do Dashboard.
-- **Avatar** — reutilizado em Navbar e Perfil.
+- **Navbar**: aparece em toda tela.
+- **Card**: se repete várias vezes no grid, e talvez reapareça no Perfil.
+- **Button**: usado em Login, Dashboard e Perfil.
+- **Input**: usado no formulário de Login, e talvez em uma busca do Dashboard.
+- **Avatar**: reutilizado em Navbar e Perfil.
 
 ## // Se você está começando
 
@@ -103,12 +103,12 @@ Cada arquivo é conectado com seu próprio `<link>`, ou combinados via `@import`
 
 ### > Separação entre estrutura e apresentação
 
-Evite nomear classes pela aparência (`.texto-azul`, `.caixa-grande`) — prefira nomear pela função (`.titulo-secao`, `.card-destaque`). Se a cor "azul" mudar para outra no futuro, uma classe chamada `.texto-azul` fica com um nome que não corresponde mais à realidade.
+Evite nomear classes pela aparência (`.texto-azul`, `.caixa-grande`), prefira nomear pela função (`.titulo-secao`, `.card-destaque`). Se a cor "azul" mudar para outra no futuro, uma classe chamada `.texto-azul` fica com um nome que não corresponde mais à realidade.
 
 ## // Tema claro/escuro
 
 > **NÃO COMECE PELO CÓDIGO**
-> Antes de qualquer CSS, pergunte: o que muda entre o tema claro e o escuro, no seu projeto? Normalmente, a resposta é: cores e tokens — não a estrutura, não o layout, não os componentes em si.
+> Antes de qualquer CSS, pergunte: o que muda entre o tema claro e o escuro, no seu projeto? Normalmente, a resposta é: cores e tokens, não a estrutura, não o layout, não os componentes em si.
 
 Usando as CSS Custom Properties que você já criou no Módulo 11:
 
@@ -131,13 +131,13 @@ body {
 }
 ```
 
-O truque está em `[data-theme="dark"]` — um seletor de atributo, que sobrescreve as variáveis de `:root` quando o elemento (geralmente o `<html>` ou `<body>`) tem o atributo `data-theme="dark"`:
+O truque está em `[data-theme="dark"]`: um seletor de atributo, que sobrescreve as variáveis de `:root` quando o elemento (geralmente o `<html>` ou `<body>`) tem o atributo `data-theme="dark"`:
 
 ```html
 <html data-theme="dark">
 ```
 
-Todo componente que já usa `var(--bg)` ou `var(--text)` muda automaticamente de tema — sem precisar de uma segunda versão de cada regra.
+Todo componente que já usa `var(--bg)` ou `var(--text)` muda automaticamente de tema, sem precisar de uma segunda versão de cada regra.
 
 ### > `prefers-color-scheme`
 
@@ -152,7 +152,7 @@ Todo componente que já usa `var(--bg)` ou `var(--text)` muda automaticamente de
 
 Essa media query detecta a preferência de tema já configurada no sistema operacional da pessoa (muitos celulares e computadores têm essa opção). Você pode usar ela como padrão automático, e ainda combinar com `data-theme` para permitir que a pessoa troque manualmente dentro do seu site.
 
-> **IMPORTANTE — SEM VIRAR AULA DE JAVASCRIPT**
+> **IMPORTANTE: SEM VIRAR AULA DE JAVASCRIPT**
 > Um botão que troca o tema ao ser clicado exige JavaScript para alternar o atributo `data-theme` dinamicamente. Isso não é foco desta semana. O CSS acima já é suficiente para o entregável básico (usando `prefers-color-scheme`, o tema muda automaticamente com a configuração do sistema). Um botão de troca manual de tema é um desafio extra, marcado especificamente para veteranos.
 
 ## // Erros comuns
@@ -165,10 +165,10 @@ Essa media query detecta a preferência de tema já configurada no sistema opera
 
 ## // Prática guiada
 
-1. Liste, em texto mesmo, todos os componentes que se repetem no seu projeto (Navbar, Card, Button, Input, Avatar — ajuste para o que existir no seu caso).
+1. Liste, em texto mesmo, todos os componentes que se repetem no seu projeto (Navbar, Card, Button, Input, Avatar, ajuste para o que existir no seu caso).
 2. Para cada um, confirme: existe uma única classe CSS reutilizada em todo lugar que ele aparece? Se não, unifique.
 3. Adicione o bloco `[data-theme="dark"]` ao seu `styles.css`, com pelo menos `--bg` e `--text` redefinidos.
-4. Adicione `<html data-theme="dark">` temporariamente só para testar visualmente a troca — depois volte para `data-theme="light"` ou remova o atributo.
+4. Adicione `<html data-theme="dark">` temporariamente só para testar visualmente a troca, depois volte para `data-theme="light"` ou remova o atributo.
 
 ## // Pratique sozinho
 
@@ -186,7 +186,7 @@ Essa media query detecta a preferência de tema já configurada no sistema opera
 > **ANTES DE SEGUIR, PENSE NISTO**
 > Você quer adicionar um botão que alterna entre tema claro e escuro ao ser clicado. O CSS que você já escreveu neste módulo já é suficiente para isso funcionar, ou falta alguma coisa?
 
-Resposta: falta JavaScript. O CSS já prepara toda a base (as variáveis mudando conforme `data-theme`), mas alternar esse atributo em resposta a um clique é uma ação dinâmica — comportamento, não estrutura nem apresentação — que só JavaScript resolve. É exatamente por isso que esse botão está marcado como desafio de aprofundamento, não como parte do entregável básico.
+Resposta: falta JavaScript. O CSS já prepara toda a base (as variáveis mudando conforme `data-theme`), mas alternar esse atributo em resposta a um clique é uma ação dinâmica (comportamento, não estrutura nem apresentação) que só JavaScript resolve. É exatamente por isso que esse botão está marcado como desafio de aprofundamento, não como parte do entregável básico.
 
 ## // Resumo do módulo
 
@@ -198,6 +198,6 @@ Resposta: falta JavaScript. O CSS já prepara toda a base (as variáveis mudando
 
 ---
 
-**Próximo módulo:** `14-projeto-guiado.md` — juntando tudo, do início ao fim, nas três telas completas.
+**Próximo módulo:** `14-projeto-guiado.md`, juntando tudo, do início ao fim, nas três telas completas.
 
 `Material de Estudo // Coffee & Code`

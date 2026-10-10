@@ -1,14 +1,14 @@
-# Módulo 09 — Do Figma para o Código
+# Módulo 09 | Do Figma para o Código
 
-`SEM 02 // Interface Web — Parte 1: Layout`
+`SEM 02 // Interface Web, Parte 1: Layout`
 
 ---
 
 ## // Por que este módulo existe
 
-Você já sabe HTML, CSS, Flexbox, Grid e responsividade — as ferramentas. O que ainda falta é o raciocínio que conecta uma tela do Figma ao código: como olhar para um design e decidir, antes de escrever qualquer tag, quais elementos existem e como eles se organizam.
+Você já sabe HTML, CSS, Flexbox, Grid e responsividade: as ferramentas. O que ainda falta é o raciocínio que conecta uma tela do Figma ao código: como olhar para um design e decidir, antes de escrever qualquer tag, quais elementos existem e como eles se organizam.
 
-Pular essa análise é a causa mais comum de HTML bagunçado — quem começa direto pelo código tende a criar estrutura ad-hoc, sem hierarquia clara, e descobre os problemas só depois, quando já é mais caro corrigir.
+Pular essa análise é a causa mais comum de HTML bagunçado, quem começa direto pelo código tende a criar estrutura ad-hoc, sem hierarquia clara, e descobre os problemas só depois, quando já é mais caro corrigir.
 
 ## // Analisando antes de codificar
 
@@ -28,11 +28,11 @@ Pegue a tela de Dashboard do seu protótipo no Figma (ou a referência visual de
 └────────────────────────────────┘
 ```
 
-Nesse ponto, você ainda não está pensando em HTML — só em regiões. Duas grandes áreas: uma barra lateral e uma área principal, que por sua vez tem um cabeçalho e uma grade de cards dentro dela.
+Nesse ponto, você ainda não está pensando em HTML, só em regiões. Duas grandes áreas: uma barra lateral e uma área principal, que por sua vez tem um cabeçalho e uma grade de cards dentro dela.
 
 ## // Decompondo em árvore
 
-O próximo passo é transformar essas regiões em uma hierarquia — exatamente a relação pai/filho que você aprendeu no Módulo 02:
+O próximo passo é transformar essas regiões em uma hierarquia, exatamente a relação pai/filho que você aprendeu no Módulo 02:
 
 <div align="center">
 <img src="assets/figma-to-code.svg" alt="À esquerda, a tela do Figma dividida em Sidebar, Header e CardGrid; à direita, a árvore de componentes correspondente: Page contendo Sidebar e Main, Main contendo Header e CardGrid, CardGrid contendo três Card" width="620">
@@ -65,7 +65,7 @@ Essa árvore **é** o HTML, só ainda não escrito com tags:
 </div>
 ```
 
-Repare que a estrutura HTML segue exatamente a árvore que você desenhou — cada nível de aninhamento corresponde a um nível da árvore. Depois de ter essa estrutura, o CSS entra: Flexbox ou Grid para `.page` (organizando sidebar e main), Grid para `.card-grid`, Flexbox para o conteúdo dentro de cada `.card`.
+Repare que a estrutura HTML segue exatamente a árvore que você desenhou; cada nível de aninhamento corresponde a um nível da árvore. Depois de ter essa estrutura, o CSS entra: Flexbox ou Grid para `.page` (organizando sidebar e main), Grid para `.card-grid`, Flexbox para o conteúdo dentro de cada `.card`.
 
 ## // O que NÃO fazer: copiar coordenadas
 
@@ -81,16 +81,16 @@ O Figma mostra a posição exata de cada elemento em pixels (X, Y). É tentador 
 ```
 
 > **POR QUE EVITAR `POSITION: ABSOLUTE` PARA MONTAR A PÁGINA INTEIRA**
-> Posicionamento absoluto tira o elemento do fluxo normal da página — ele para de reagir ao conteúdo ao redor, ao tamanho da tela, a qualquer coisa. Um layout construído inteiramente com coordenadas fixas quebra no primeiro tamanho de tela diferente daquele em que foi medido. É o oposto do que Flexbox e Grid foram desenhados para resolver: layout que se adapta, não que se fixa.
+> Posicionamento absoluto tira o elemento do fluxo normal da página; ele para de reagir ao conteúdo ao redor, ao tamanho da tela, a qualquer coisa. Um layout construído inteiramente com coordenadas fixas quebra no primeiro tamanho de tela diferente daquele em que foi medido. É o oposto do que Flexbox e Grid foram desenhados para resolver: layout que se adapta, não que se fixa.
 
-Isso não significa que `position: absolute` nunca serve para nada — ele tem usos legítimos e pontuais (um badge no canto de um avatar, por exemplo). O problema é usá-lo como estratégia *principal* para montar a página inteira, tentando replicar coordenadas do Figma uma a uma.
+Isso não significa que `position: absolute` nunca serve para nada; ele tem usos legítimos e pontuais (um badge no canto de um avatar, por exemplo). O problema é usá-lo como estratégia *principal* para montar a página inteira, tentando replicar coordenadas do Figma uma a uma.
 
 ## // O processo, resumido
 
 1. **Olhe a tela inteira** e identifique as grandes regiões (2 a 4 blocos principais, geralmente).
-2. **Desenhe a árvore** — quem é filho de quem.
+2. **Desenhe a árvore**: quem é filho de quem.
 3. **Escreva o HTML** seguindo exatamente essa árvore, usando tags semânticas onde fizer sentido.
-4. **Decida a ferramenta de layout** para cada nível — Flexbox para sequências em uma direção, Grid para estruturas bidimensionais.
+4. **Decida a ferramenta de layout** para cada nível: Flexbox para sequências em uma direção, Grid para estruturas bidimensionais.
 5. **Só então** ajuste espaçamento, cores e detalhes finos.
 
 ## // Exemplo guiado: analisando o Perfil
@@ -106,7 +106,7 @@ Profile
     └── Actions (botões)
 ```
 
-Pergunta antes de codificar: `Avatar`, `UserInfo` e `Actions` deveriam ficar em coluna, ou lado a lado? Essa decisão vem do design da tela — e determina se `Main` usa `flex-direction: column` ou `row`.
+Pergunta antes de codificar: `Avatar`, `UserInfo` e `Actions` deveriam ficar em coluna, ou lado a lado? Essa decisão vem do design da tela, e determina se `Main` usa `flex-direction: column` ou `row`.
 
 ## // Erros comuns
 
@@ -120,18 +120,18 @@ Pergunta antes de codificar: `Avatar`, `UserInfo` e `Actions` deveriam ficar em 
 
 1. Abra o protótipo do Dashboard no Figma (ou a referência deste guia).
 2. No papel ou em um editor de texto simples, desenhe a árvore de componentes, como no exemplo desta seção.
-3. Compare sua árvore com o HTML que você já escreveu nos módulos anteriores — eles combinam? Se não, ajuste a estrutura antes de seguir.
+3. Compare sua árvore com o HTML que você já escreveu nos módulos anteriores; eles combinam? Se não, ajuste a estrutura antes de seguir.
 
 ## // Pratique sozinho
 
 > **DESAFIO**
-> Desenhe a árvore de componentes da tela de Login, incluindo o formulário. Depois, compare com o `login.html` que você já tem — existe alguma região que ficou sem uma tag clara representando ela (por exemplo, o formulário inteiro sem um container em volta)?
+> Desenhe a árvore de componentes da tela de Login, incluindo o formulário. Depois, compare com o `login.html` que você já tem, existe alguma região que ficou sem uma tag clara representando ela (por exemplo, o formulário inteiro sem um container em volta)?
 
 ## // Aplicando no projeto da semana
 
 1. Desenhe a árvore de componentes das três telas do seu projeto, a partir do Figma da Semana 01.
 2. Revise o HTML de cada tela, confirmando que a estrutura de tags corresponde à árvore desenhada.
-3. Ajuste qualquer trecho que tenha `position: absolute` sendo usado para montar o layout principal — substitua por Flexbox ou Grid.
+3. Ajuste qualquer trecho que tenha `position: absolute` sendo usado para montar o layout principal, substitua por Flexbox ou Grid.
 4. Commit: `git commit -m "Revisa estrutura HTML das três telas com base na análise do Figma"`.
 
 ## // Checkpoint
@@ -150,6 +150,6 @@ Resposta: porque decisões de estrutura (o que é filho de quê, quais regiões 
 
 ---
 
-**Próximo módulo:** `10-tailwind.md` — agora que CSS está sólido, uma forma mais rápida de escrever as mesmas regras.
+**Próximo módulo:** `10-tailwind.md`, agora que CSS está sólido, uma forma mais rápida de escrever as mesmas regras.
 
 `Material de Estudo // Coffee & Code`
